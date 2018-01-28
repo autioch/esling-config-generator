@@ -28,3 +28,5 @@ import  Eslint config generator  from 'eslint-config-generator';
     }]
 ]
 ```
+## TODO
+Check the autoconfig file in eslint repository.

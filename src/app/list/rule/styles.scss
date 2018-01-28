@@ -23,6 +23,11 @@
   margin-left: auto;
   flex-grow: 1;
   margin-right: .5em;
+
+  > div {
+    background: #aaa;
+    margin-bottom: .25em;
+  }
 }
 
 .rule__category {
