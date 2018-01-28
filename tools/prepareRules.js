@@ -15,7 +15,7 @@ function rulesToLines(rules) {
   ]), []);
 }
 
-module.exports = function loadRules(sourceRoot) {
+module.exports = function prepareRules({ sourceRoot }) {
   const rules = eslintLoadRules();
   const ruleCount = Object.keys(rules).length;
   const fileName = join(sourceRoot, 'rules.js');
@@ -36,5 +36,3 @@ module.exports = function loadRules(sourceRoot) {
     });
   });
 };
-
-module.exports('.');
