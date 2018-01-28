@@ -1,10 +1,30 @@
-# Eslint config generator
+# eslint-config-generator
 
-Simple web app for generating up to date eslint config.
+*Work in progress.*
 
 
----
+## Installation
+`npm i eslint-config-generator`
 
-### _Work in progress. Do not expect it to work properly._
+## Usage
 
----
+```javascript
+
+const Eslint config generator = require('eslint-config-generator');
+
+import  Eslint config generator  from 'eslint-config-generator';
+
+```
+
+## Adding Preact
+1. Install packages:
+`npm i preact babel-plugin-transform-react-jsx`
+`npm i -D eslint-plugin-react`
+2. Modify `tools/webpack.config.js`. Add option to javascript loader:
+```javascript
+  plugins: [
+    ['transform-react-jsx', {
+      pragma: 'h'
+    }]
+]
+```

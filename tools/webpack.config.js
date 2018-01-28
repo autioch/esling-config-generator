@@ -3,16 +3,18 @@ const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 const isProduction = process.argv.indexOf('-p') > -1;
-const isWatch = process.argv.indexOf('-watch') > -1;
+const isWatch = process.argv.indexOf('--watch') > -1;
 const projectRoot = join(__dirname, '..');
 const sourceRoot = join(projectRoot, 'src');
 const buildRoot = join(projectRoot, 'build');
 
 const babelEnv = {
   targets: {
-    browsers: ['last 2 versions']
+    browsers: ['last 2 versions'],
+    ie: 9 // eslint-disable-line no-magic-numbers
   },
   modules: false,
   loose: true
@@ -21,13 +23,13 @@ const babelEnv = {
 const webpackConfig = {
   watch: isWatch,
   context: sourceRoot,
-  entry: [join(sourceRoot, 'index')],
+  entry: ['babel-polyfill', join(sourceRoot, 'index')],
   output: {
     path: buildRoot,
     filename: '[name].js'
   },
   resolve: {
-    extensions: ['.js', '.php', '.png', '.scss', '.css', '.jsx']
+    extensions: ['.js', '.png', '.scss', '.css', '.jsx']
   },
   module: {
     rules: [{
@@ -61,6 +63,13 @@ const webpackConfig = {
       use: ExtractTextPlugin.extract({
         use: [{
           loader: 'css-loader'
+        }, {
+          loader: 'postcss-loader',
+          options: {
+            plugins() {
+              return [autoprefixer];
+            }
+          }
         }, {
           loader: 'sass-loader'
         }]
@@ -109,7 +118,17 @@ if (isProduction) {
     })
   );
 } else {
-  webpackConfig.devtool = 'source-map';
+  webpackConfig.devtool = 'eval-source-map';
+}
+
+if (isWatch) {
+  const LiveReloadPlugin = require('webpack-livereload-plugin');
+
+  webpackConfig.plugins.push(new LiveReloadPlugin({
+    appendScriptTag: true,
+    ignore: /.(js|json|config|ico|woff|map|html)$/
+  }));
+  require('serve-local')(buildRoot, 8080); // eslint-disable-line no-magic-numbers
 }
 
 module.exports = webpackConfig;
