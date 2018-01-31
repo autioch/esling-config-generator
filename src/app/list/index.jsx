@@ -5,7 +5,7 @@ export default class List extends Component {
   constructor(props) {
     super(props);
 
-    console.log(this.props.rules.id, this.props.rules.meta);
+    console.log(this.props.rules[0].id, this.props.rules[0].meta);
   }
   render() {
     return (

@@ -1,22 +1,17 @@
 /* eslint eqeqeq: 0 */
 /* eslint max-len: 0 */
-/* eslint max-statements: 0 */
+/* eslint no-use-before-define: 0*/
 import React from 'react';
-import JsonSchemaForm from 'react-jsonschema-form';
+import './styles';
+import Field from './component/field';
 
 export default class Schema extends React.Component {
   render() {
+    const { schema } = this.props;
+
     return (
       <div className="rule__schema">
-        { (Array.isArray(this.props.schema) ? this.props.schema : [this.props.schema]).map((option, index) =>
-          <div key={index}>
-            <JsonSchemaForm schema={option}>
-              <button style={{
-                display: 'none'
-              }}/>
-            </JsonSchemaForm>
-          </div>
-        ) }
+        { (Array.isArray(schema) ? schema : [schema]).map((option, index) => <Field propertyName="" obj={option} key={index}/>) }
       </div>
     );
   }
