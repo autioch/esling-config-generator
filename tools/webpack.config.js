@@ -1,6 +1,5 @@
 const { join } = require('path');
 const prepareWebpackConfig = require('./prepareWebpackConfig');
-const prepareRules = require('./prepareRules');
 const prepareMode = require('./prepareMode');
 
 const projectRoot = join(__dirname, '..');
@@ -13,6 +12,7 @@ const setup = {
   isProduction: process.argv.indexOf('-p') > -1
 };
 
-module.exports = prepareRules(setup)
-  .then(() => prepareWebpackConfig(setup))
-  .then((webpackConfig) => prepareMode(setup, webpackConfig));
+const webpackConfig = prepareWebpackConfig(setup);
+
+prepareMode(setup, webpackConfig);
+module.exports = webpackConfig;

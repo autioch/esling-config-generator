@@ -2,37 +2,28 @@ const { join } = require('path');
 const { writeFile } = require('fs');
 const eslintLoadRules = require('eslint/lib/load-rules');
 
-const linterRuleLines = [
+const headerLines = [
   '/* eslint max-lines: 0 */',
-  '/* eslint max-len: 0 */'
-];
+  '/* eslint max-len: 0 */',
+  'module.exports = '
+].join('\r\n');
 
-function rulesToLines(rules) {
-  return Object.entries(rules).reduce((list, [id, absolutePath]) => list.concat([
-    `  id: '${id}',`,
-    `  meta: require('${absolutePath.replace(/\\/g, '/')}').meta`,
-    '}, {'
-  ]), []);
-}
+const rulePathsDict = eslintLoadRules();
+const rules = Object.entries(rulePathsDict)
+  .map(([id, absolutePath]) => ({
+    id,
+    meta: require(absolutePath).meta
+  }));
 
-module.exports = function prepareRules({ sourceRoot }) {
-  const rules = eslintLoadRules();
-  const ruleCount = Object.keys(rules).length;
-  const fileName = join(sourceRoot, 'rules.js');
-  const ruleLines = rulesToLines(rules);
+const fileName = join(__dirname, '..', 'src', 'rules.js');
+const contents = `${headerLines}${JSON.stringify(rules, null, '  ')};`;
 
-  ruleLines.pop();
+writeFile(fileName, contents, 'utf8', (err) => {
+  if (err) {
+    console.log(err.message);
+  } else {
+    const ruleCount = Object.keys(rules).length;
 
-  const contents = linterRuleLines.concat('module.exports = [{').concat(ruleLines).concat('}];', '')
-    .join('\r\n');
-
-  return new Promise((resolve, reject) => {
-    writeFile(fileName, contents, 'utf8', (err) => {
-      if (err) {
-        reject(err.message);
-      } else {
-        resolve(`Found ${ruleCount} rule${ruleCount > 1 ? 's' : ''}`);
-      }
-    });
-  });
-};
+    console.log(`Found ${ruleCount} rule${ruleCount > 1 ? 's' : ''}`);
+  }
+});

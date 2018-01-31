@@ -8,6 +8,7 @@
   "scripts": {
     "build": "webpack --config tools/webpack.config.js -p --hide-modules",
     "dev": "webpack --config tools/webpack.config.js --watch --hide-modules",
+    "rules": "node ./tools/prepareRules",
     "lint": "eslint ./src --fix --ext .js & exit 0",
     "lint:sass": "sass-lint -c .sass-lint.yml -v -q & exit 0"
   },

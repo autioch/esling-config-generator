@@ -1,774 +1,8119 @@
 /* eslint max-lines: 0 */
 /* eslint max-len: 0 */
-module.exports = [{
-  id: 'accessor-pairs',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/accessor-pairs.js').meta
-}, {
-  id: 'array-bracket-newline',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/array-bracket-newline.js').meta
-}, {
-  id: 'array-bracket-spacing',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/array-bracket-spacing.js').meta
-}, {
-  id: 'array-callback-return',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/array-callback-return.js').meta
-}, {
-  id: 'array-element-newline',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/array-element-newline.js').meta
-}, {
-  id: 'arrow-body-style',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/arrow-body-style.js').meta
-}, {
-  id: 'arrow-parens',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/arrow-parens.js').meta
-}, {
-  id: 'arrow-spacing',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/arrow-spacing.js').meta
-}, {
-  id: 'block-scoped-var',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/block-scoped-var.js').meta
-}, {
-  id: 'block-spacing',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/block-spacing.js').meta
-}, {
-  id: 'brace-style',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/brace-style.js').meta
-}, {
-  id: 'callback-return',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/callback-return.js').meta
-}, {
-  id: 'camelcase',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/camelcase.js').meta
-}, {
-  id: 'capitalized-comments',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/capitalized-comments.js').meta
-}, {
-  id: 'class-methods-use-this',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/class-methods-use-this.js').meta
-}, {
-  id: 'comma-dangle',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/comma-dangle.js').meta
-}, {
-  id: 'comma-spacing',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/comma-spacing.js').meta
-}, {
-  id: 'comma-style',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/comma-style.js').meta
-}, {
-  id: 'complexity',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/complexity.js').meta
-}, {
-  id: 'computed-property-spacing',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/computed-property-spacing.js').meta
-}, {
-  id: 'consistent-return',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/consistent-return.js').meta
-}, {
-  id: 'consistent-this',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/consistent-this.js').meta
-}, {
-  id: 'constructor-super',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/constructor-super.js').meta
-}, {
-  id: 'curly',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/curly.js').meta
-}, {
-  id: 'default-case',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/default-case.js').meta
-}, {
-  id: 'dot-location',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/dot-location.js').meta
-}, {
-  id: 'dot-notation',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/dot-notation.js').meta
-}, {
-  id: 'eol-last',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/eol-last.js').meta
-}, {
-  id: 'eqeqeq',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/eqeqeq.js').meta
-}, {
-  id: 'for-direction',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/for-direction.js').meta
-}, {
-  id: 'func-call-spacing',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/func-call-spacing.js').meta
-}, {
-  id: 'func-name-matching',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/func-name-matching.js').meta
-}, {
-  id: 'func-names',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/func-names.js').meta
-}, {
-  id: 'func-style',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/func-style.js').meta
-}, {
-  id: 'function-paren-newline',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/function-paren-newline.js').meta
-}, {
-  id: 'generator-star-spacing',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/generator-star-spacing.js').meta
-}, {
-  id: 'getter-return',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/getter-return.js').meta
-}, {
-  id: 'global-require',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/global-require.js').meta
-}, {
-  id: 'guard-for-in',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/guard-for-in.js').meta
-}, {
-  id: 'handle-callback-err',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/handle-callback-err.js').meta
-}, {
-  id: 'id-blacklist',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/id-blacklist.js').meta
-}, {
-  id: 'id-length',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/id-length.js').meta
-}, {
-  id: 'id-match',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/id-match.js').meta
-}, {
-  id: 'implicit-arrow-linebreak',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/implicit-arrow-linebreak.js').meta
-}, {
-  id: 'indent-legacy',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/indent-legacy.js').meta
-}, {
-  id: 'indent',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/indent.js').meta
-}, {
-  id: 'init-declarations',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/init-declarations.js').meta
-}, {
-  id: 'jsx-quotes',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/jsx-quotes.js').meta
-}, {
-  id: 'key-spacing',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/key-spacing.js').meta
-}, {
-  id: 'keyword-spacing',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/keyword-spacing.js').meta
-}, {
-  id: 'line-comment-position',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/line-comment-position.js').meta
-}, {
-  id: 'linebreak-style',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/linebreak-style.js').meta
-}, {
-  id: 'lines-around-comment',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/lines-around-comment.js').meta
-}, {
-  id: 'lines-around-directive',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/lines-around-directive.js').meta
-}, {
-  id: 'lines-between-class-members',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/lines-between-class-members.js').meta
-}, {
-  id: 'max-depth',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/max-depth.js').meta
-}, {
-  id: 'max-len',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/max-len.js').meta
-}, {
-  id: 'max-lines',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/max-lines.js').meta
-}, {
-  id: 'max-nested-callbacks',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/max-nested-callbacks.js').meta
-}, {
-  id: 'max-params',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/max-params.js').meta
-}, {
-  id: 'max-statements-per-line',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/max-statements-per-line.js').meta
-}, {
-  id: 'max-statements',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/max-statements.js').meta
-}, {
-  id: 'multiline-comment-style',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/multiline-comment-style.js').meta
-}, {
-  id: 'multiline-ternary',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/multiline-ternary.js').meta
-}, {
-  id: 'new-cap',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/new-cap.js').meta
-}, {
-  id: 'new-parens',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/new-parens.js').meta
-}, {
-  id: 'newline-after-var',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/newline-after-var.js').meta
-}, {
-  id: 'newline-before-return',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/newline-before-return.js').meta
-}, {
-  id: 'newline-per-chained-call',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/newline-per-chained-call.js').meta
-}, {
-  id: 'no-alert',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-alert.js').meta
-}, {
-  id: 'no-array-constructor',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-array-constructor.js').meta
-}, {
-  id: 'no-await-in-loop',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-await-in-loop.js').meta
-}, {
-  id: 'no-bitwise',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-bitwise.js').meta
-}, {
-  id: 'no-buffer-constructor',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-buffer-constructor.js').meta
-}, {
-  id: 'no-caller',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-caller.js').meta
-}, {
-  id: 'no-case-declarations',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-case-declarations.js').meta
-}, {
-  id: 'no-catch-shadow',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-catch-shadow.js').meta
-}, {
-  id: 'no-class-assign',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-class-assign.js').meta
-}, {
-  id: 'no-compare-neg-zero',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-compare-neg-zero.js').meta
-}, {
-  id: 'no-cond-assign',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-cond-assign.js').meta
-}, {
-  id: 'no-confusing-arrow',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-confusing-arrow.js').meta
-}, {
-  id: 'no-console',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-console.js').meta
-}, {
-  id: 'no-const-assign',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-const-assign.js').meta
-}, {
-  id: 'no-constant-condition',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-constant-condition.js').meta
-}, {
-  id: 'no-continue',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-continue.js').meta
-}, {
-  id: 'no-control-regex',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-control-regex.js').meta
-}, {
-  id: 'no-debugger',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-debugger.js').meta
-}, {
-  id: 'no-delete-var',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-delete-var.js').meta
-}, {
-  id: 'no-div-regex',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-div-regex.js').meta
-}, {
-  id: 'no-dupe-args',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-dupe-args.js').meta
-}, {
-  id: 'no-dupe-class-members',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-dupe-class-members.js').meta
-}, {
-  id: 'no-dupe-keys',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-dupe-keys.js').meta
-}, {
-  id: 'no-duplicate-case',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-duplicate-case.js').meta
-}, {
-  id: 'no-duplicate-imports',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-duplicate-imports.js').meta
-}, {
-  id: 'no-else-return',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-else-return.js').meta
-}, {
-  id: 'no-empty-character-class',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-empty-character-class.js').meta
-}, {
-  id: 'no-empty-function',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-empty-function.js').meta
-}, {
-  id: 'no-empty-pattern',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-empty-pattern.js').meta
-}, {
-  id: 'no-empty',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-empty.js').meta
-}, {
-  id: 'no-eq-null',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-eq-null.js').meta
-}, {
-  id: 'no-eval',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-eval.js').meta
-}, {
-  id: 'no-ex-assign',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-ex-assign.js').meta
-}, {
-  id: 'no-extend-native',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-extend-native.js').meta
-}, {
-  id: 'no-extra-bind',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-extra-bind.js').meta
-}, {
-  id: 'no-extra-boolean-cast',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-extra-boolean-cast.js').meta
-}, {
-  id: 'no-extra-label',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-extra-label.js').meta
-}, {
-  id: 'no-extra-parens',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-extra-parens.js').meta
-}, {
-  id: 'no-extra-semi',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-extra-semi.js').meta
-}, {
-  id: 'no-fallthrough',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-fallthrough.js').meta
-}, {
-  id: 'no-floating-decimal',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-floating-decimal.js').meta
-}, {
-  id: 'no-func-assign',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-func-assign.js').meta
-}, {
-  id: 'no-global-assign',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-global-assign.js').meta
-}, {
-  id: 'no-implicit-coercion',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-implicit-coercion.js').meta
-}, {
-  id: 'no-implicit-globals',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-implicit-globals.js').meta
-}, {
-  id: 'no-implied-eval',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-implied-eval.js').meta
-}, {
-  id: 'no-inline-comments',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-inline-comments.js').meta
-}, {
-  id: 'no-inner-declarations',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-inner-declarations.js').meta
-}, {
-  id: 'no-invalid-regexp',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-invalid-regexp.js').meta
-}, {
-  id: 'no-invalid-this',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-invalid-this.js').meta
-}, {
-  id: 'no-irregular-whitespace',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-irregular-whitespace.js').meta
-}, {
-  id: 'no-iterator',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-iterator.js').meta
-}, {
-  id: 'no-label-var',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-label-var.js').meta
-}, {
-  id: 'no-labels',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-labels.js').meta
-}, {
-  id: 'no-lone-blocks',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-lone-blocks.js').meta
-}, {
-  id: 'no-lonely-if',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-lonely-if.js').meta
-}, {
-  id: 'no-loop-func',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-loop-func.js').meta
-}, {
-  id: 'no-magic-numbers',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-magic-numbers.js').meta
-}, {
-  id: 'no-mixed-operators',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-mixed-operators.js').meta
-}, {
-  id: 'no-mixed-requires',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-mixed-requires.js').meta
-}, {
-  id: 'no-mixed-spaces-and-tabs',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-mixed-spaces-and-tabs.js').meta
-}, {
-  id: 'no-multi-assign',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-multi-assign.js').meta
-}, {
-  id: 'no-multi-spaces',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-multi-spaces.js').meta
-}, {
-  id: 'no-multi-str',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-multi-str.js').meta
-}, {
-  id: 'no-multiple-empty-lines',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-multiple-empty-lines.js').meta
-}, {
-  id: 'no-native-reassign',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-native-reassign.js').meta
-}, {
-  id: 'no-negated-condition',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-negated-condition.js').meta
-}, {
-  id: 'no-negated-in-lhs',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-negated-in-lhs.js').meta
-}, {
-  id: 'no-nested-ternary',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-nested-ternary.js').meta
-}, {
-  id: 'no-new-func',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-new-func.js').meta
-}, {
-  id: 'no-new-object',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-new-object.js').meta
-}, {
-  id: 'no-new-require',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-new-require.js').meta
-}, {
-  id: 'no-new-symbol',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-new-symbol.js').meta
-}, {
-  id: 'no-new-wrappers',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-new-wrappers.js').meta
-}, {
-  id: 'no-new',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-new.js').meta
-}, {
-  id: 'no-obj-calls',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-obj-calls.js').meta
-}, {
-  id: 'no-octal-escape',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-octal-escape.js').meta
-}, {
-  id: 'no-octal',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-octal.js').meta
-}, {
-  id: 'no-param-reassign',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-param-reassign.js').meta
-}, {
-  id: 'no-path-concat',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-path-concat.js').meta
-}, {
-  id: 'no-plusplus',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-plusplus.js').meta
-}, {
-  id: 'no-process-env',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-process-env.js').meta
-}, {
-  id: 'no-process-exit',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-process-exit.js').meta
-}, {
-  id: 'no-proto',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-proto.js').meta
-}, {
-  id: 'no-prototype-builtins',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-prototype-builtins.js').meta
-}, {
-  id: 'no-redeclare',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-redeclare.js').meta
-}, {
-  id: 'no-regex-spaces',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-regex-spaces.js').meta
-}, {
-  id: 'no-restricted-globals',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-restricted-globals.js').meta
-}, {
-  id: 'no-restricted-imports',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-restricted-imports.js').meta
-}, {
-  id: 'no-restricted-modules',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-restricted-modules.js').meta
-}, {
-  id: 'no-restricted-properties',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-restricted-properties.js').meta
-}, {
-  id: 'no-restricted-syntax',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-restricted-syntax.js').meta
-}, {
-  id: 'no-return-assign',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-return-assign.js').meta
-}, {
-  id: 'no-return-await',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-return-await.js').meta
-}, {
-  id: 'no-script-url',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-script-url.js').meta
-}, {
-  id: 'no-self-assign',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-self-assign.js').meta
-}, {
-  id: 'no-self-compare',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-self-compare.js').meta
-}, {
-  id: 'no-sequences',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-sequences.js').meta
-}, {
-  id: 'no-shadow-restricted-names',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-shadow-restricted-names.js').meta
-}, {
-  id: 'no-shadow',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-shadow.js').meta
-}, {
-  id: 'no-spaced-func',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-spaced-func.js').meta
-}, {
-  id: 'no-sparse-arrays',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-sparse-arrays.js').meta
-}, {
-  id: 'no-sync',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-sync.js').meta
-}, {
-  id: 'no-tabs',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-tabs.js').meta
-}, {
-  id: 'no-template-curly-in-string',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-template-curly-in-string.js').meta
-}, {
-  id: 'no-ternary',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-ternary.js').meta
-}, {
-  id: 'no-this-before-super',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-this-before-super.js').meta
-}, {
-  id: 'no-throw-literal',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-throw-literal.js').meta
-}, {
-  id: 'no-trailing-spaces',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-trailing-spaces.js').meta
-}, {
-  id: 'no-undef-init',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-undef-init.js').meta
-}, {
-  id: 'no-undef',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-undef.js').meta
-}, {
-  id: 'no-undefined',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-undefined.js').meta
-}, {
-  id: 'no-underscore-dangle',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-underscore-dangle.js').meta
-}, {
-  id: 'no-unexpected-multiline',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-unexpected-multiline.js').meta
-}, {
-  id: 'no-unmodified-loop-condition',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-unmodified-loop-condition.js').meta
-}, {
-  id: 'no-unneeded-ternary',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-unneeded-ternary.js').meta
-}, {
-  id: 'no-unreachable',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-unreachable.js').meta
-}, {
-  id: 'no-unsafe-finally',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-unsafe-finally.js').meta
-}, {
-  id: 'no-unsafe-negation',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-unsafe-negation.js').meta
-}, {
-  id: 'no-unused-expressions',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-unused-expressions.js').meta
-}, {
-  id: 'no-unused-labels',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-unused-labels.js').meta
-}, {
-  id: 'no-unused-vars',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-unused-vars.js').meta
-}, {
-  id: 'no-use-before-define',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-use-before-define.js').meta
-}, {
-  id: 'no-useless-call',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-useless-call.js').meta
-}, {
-  id: 'no-useless-computed-key',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-useless-computed-key.js').meta
-}, {
-  id: 'no-useless-concat',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-useless-concat.js').meta
-}, {
-  id: 'no-useless-constructor',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-useless-constructor.js').meta
-}, {
-  id: 'no-useless-escape',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-useless-escape.js').meta
-}, {
-  id: 'no-useless-rename',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-useless-rename.js').meta
-}, {
-  id: 'no-useless-return',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-useless-return.js').meta
-}, {
-  id: 'no-var',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-var.js').meta
-}, {
-  id: 'no-void',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-void.js').meta
-}, {
-  id: 'no-warning-comments',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-warning-comments.js').meta
-}, {
-  id: 'no-whitespace-before-property',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-whitespace-before-property.js').meta
-}, {
-  id: 'no-with',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/no-with.js').meta
-}, {
-  id: 'nonblock-statement-body-position',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/nonblock-statement-body-position.js').meta
-}, {
-  id: 'object-curly-newline',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/object-curly-newline.js').meta
-}, {
-  id: 'object-curly-spacing',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/object-curly-spacing.js').meta
-}, {
-  id: 'object-property-newline',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/object-property-newline.js').meta
-}, {
-  id: 'object-shorthand',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/object-shorthand.js').meta
-}, {
-  id: 'one-var-declaration-per-line',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/one-var-declaration-per-line.js').meta
-}, {
-  id: 'one-var',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/one-var.js').meta
-}, {
-  id: 'operator-assignment',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/operator-assignment.js').meta
-}, {
-  id: 'operator-linebreak',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/operator-linebreak.js').meta
-}, {
-  id: 'padded-blocks',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/padded-blocks.js').meta
-}, {
-  id: 'padding-line-between-statements',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/padding-line-between-statements.js').meta
-}, {
-  id: 'prefer-arrow-callback',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/prefer-arrow-callback.js').meta
-}, {
-  id: 'prefer-const',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/prefer-const.js').meta
-}, {
-  id: 'prefer-destructuring',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/prefer-destructuring.js').meta
-}, {
-  id: 'prefer-numeric-literals',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/prefer-numeric-literals.js').meta
-}, {
-  id: 'prefer-promise-reject-errors',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/prefer-promise-reject-errors.js').meta
-}, {
-  id: 'prefer-reflect',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/prefer-reflect.js').meta
-}, {
-  id: 'prefer-rest-params',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/prefer-rest-params.js').meta
-}, {
-  id: 'prefer-spread',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/prefer-spread.js').meta
-}, {
-  id: 'prefer-template',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/prefer-template.js').meta
-}, {
-  id: 'quote-props',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/quote-props.js').meta
-}, {
-  id: 'quotes',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/quotes.js').meta
-}, {
-  id: 'radix',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/radix.js').meta
-}, {
-  id: 'require-await',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/require-await.js').meta
-}, {
-  id: 'require-jsdoc',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/require-jsdoc.js').meta
-}, {
-  id: 'require-yield',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/require-yield.js').meta
-}, {
-  id: 'rest-spread-spacing',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/rest-spread-spacing.js').meta
-}, {
-  id: 'semi-spacing',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/semi-spacing.js').meta
-}, {
-  id: 'semi-style',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/semi-style.js').meta
-}, {
-  id: 'semi',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/semi.js').meta
-}, {
-  id: 'sort-imports',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/sort-imports.js').meta
-}, {
-  id: 'sort-keys',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/sort-keys.js').meta
-}, {
-  id: 'sort-vars',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/sort-vars.js').meta
-}, {
-  id: 'space-before-blocks',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/space-before-blocks.js').meta
-}, {
-  id: 'space-before-function-paren',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/space-before-function-paren.js').meta
-}, {
-  id: 'space-in-parens',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/space-in-parens.js').meta
-}, {
-  id: 'space-infix-ops',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/space-infix-ops.js').meta
-}, {
-  id: 'space-unary-ops',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/space-unary-ops.js').meta
-}, {
-  id: 'spaced-comment',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/spaced-comment.js').meta
-}, {
-  id: 'strict',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/strict.js').meta
-}, {
-  id: 'switch-colon-spacing',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/switch-colon-spacing.js').meta
-}, {
-  id: 'symbol-description',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/symbol-description.js').meta
-}, {
-  id: 'template-curly-spacing',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/template-curly-spacing.js').meta
-}, {
-  id: 'template-tag-spacing',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/template-tag-spacing.js').meta
-}, {
-  id: 'unicode-bom',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/unicode-bom.js').meta
-}, {
-  id: 'use-isnan',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/use-isnan.js').meta
-}, {
-  id: 'valid-jsdoc',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/valid-jsdoc.js').meta
-}, {
-  id: 'valid-typeof',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/valid-typeof.js').meta
-}, {
-  id: 'vars-on-top',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/vars-on-top.js').meta
-}, {
-  id: 'wrap-iife',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/wrap-iife.js').meta
-}, {
-  id: 'wrap-regex',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/wrap-regex.js').meta
-}, {
-  id: 'yield-star-spacing',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/yield-star-spacing.js').meta
-}, {
-  id: 'yoda',
-  meta: require('E:/projects/esling-config-generator/node_modules/eslint/lib/rules/yoda.js').meta
-}];
+module.exports = [
+  {
+    id: 'accessor-pairs',
+    meta: {
+      docs: {
+        description: 'enforce getter and setter pairs in objects',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/accessor-pairs'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            getWithoutSet: {
+              type: 'boolean'
+            },
+            setWithoutGet: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'array-bracket-newline',
+    meta: {
+      docs: {
+        description: 'enforce linebreaks after opening and before closing array brackets',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/array-bracket-newline'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          oneOf: [
+            {
+              'enum': [
+                'always',
+                'never',
+                'consistent'
+              ]
+            },
+            {
+              type: 'object',
+              properties: {
+                multiline: {
+                  type: 'boolean'
+                },
+                minItems: {
+                  type: [
+                    'integer',
+                    'null'
+                  ],
+                  minimum: 0
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'array-bracket-spacing',
+    meta: {
+      docs: {
+        description: 'enforce consistent spacing inside array brackets',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/array-bracket-spacing'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          'enum': [
+            'always',
+            'never'
+          ]
+        },
+        {
+          type: 'object',
+          properties: {
+            singleValue: {
+              type: 'boolean'
+            },
+            objectsInArrays: {
+              type: 'boolean'
+            },
+            arraysInArrays: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'array-callback-return',
+    meta: {
+      docs: {
+        description: 'enforce `return` statements in callbacks of array methods',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/array-callback-return'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            allowImplicit: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'array-element-newline',
+    meta: {
+      docs: {
+        description: 'enforce line breaks after each array element',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/array-element-newline'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          oneOf: [
+            {
+              'enum': [
+                'always',
+                'never'
+              ]
+            },
+            {
+              type: 'object',
+              properties: {
+                multiline: {
+                  type: 'boolean'
+                },
+                minItems: {
+                  type: [
+                    'integer',
+                    'null'
+                  ],
+                  minimum: 0
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'arrow-body-style',
+    meta: {
+      docs: {
+        description: 'require braces around arrow function bodies',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/arrow-body-style'
+      },
+      schema: {
+        anyOf: [
+          {
+            type: 'array',
+            items: [
+              {
+                'enum': [
+                  'always',
+                  'never'
+                ]
+              }
+            ],
+            minItems: 0,
+            maxItems: 1
+          },
+          {
+            type: 'array',
+            items: [
+              {
+                'enum': [
+                  'as-needed'
+                ]
+              },
+              {
+                type: 'object',
+                properties: {
+                  requireReturnForObjectLiteral: {
+                    type: 'boolean'
+                  }
+                },
+                additionalProperties: false
+              }
+            ],
+            minItems: 0,
+            maxItems: 2
+          }
+        ]
+      },
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'arrow-parens',
+    meta: {
+      docs: {
+        description: 'require parentheses around arrow function arguments',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/arrow-parens'
+      },
+      fixable: 'code',
+      schema: [
+        {
+          'enum': [
+            'always',
+            'as-needed'
+          ]
+        },
+        {
+          type: 'object',
+          properties: {
+            requireForBlockBody: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'arrow-spacing',
+    meta: {
+      docs: {
+        description: 'enforce consistent spacing before and after the arrow in arrow functions',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/arrow-spacing'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            before: {
+              type: 'boolean'
+            },
+            after: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'block-scoped-var',
+    meta: {
+      docs: {
+        description: 'enforce the use of variables within the scope they are defined',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/block-scoped-var'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'block-spacing',
+    meta: {
+      docs: {
+        description: 'disallow or enforce spaces inside of blocks after opening block and before closing block',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/block-spacing'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          'enum': [
+            'always',
+            'never'
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'brace-style',
+    meta: {
+      docs: {
+        description: 'enforce consistent brace style for blocks',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/brace-style'
+      },
+      schema: [
+        {
+          'enum': [
+            '1tbs',
+            'stroustrup',
+            'allman'
+          ]
+        },
+        {
+          type: 'object',
+          properties: {
+            allowSingleLine: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ],
+      fixable: 'whitespace'
+    }
+  },
+  {
+    id: 'callback-return',
+    meta: {
+      docs: {
+        description: 'require `return` statements after callbacks',
+        category: 'Node.js and CommonJS',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/callback-return'
+      },
+      schema: [
+        {
+          type: 'array',
+          items: {
+            type: 'string'
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: 'camelcase',
+    meta: {
+      docs: {
+        description: 'enforce camelcase naming convention',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/camelcase'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            properties: {
+              'enum': [
+                'always',
+                'never'
+              ]
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'capitalized-comments',
+    meta: {
+      docs: {
+        description: 'enforce or disallow capitalization of the first letter of a comment',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/capitalized-comments'
+      },
+      fixable: 'code',
+      schema: [
+        {
+          'enum': [
+            'always',
+            'never'
+          ]
+        },
+        {
+          oneOf: [
+            {
+              type: 'object',
+              properties: {
+                ignorePattern: {
+                  type: 'string'
+                },
+                ignoreInlineComments: {
+                  type: 'boolean'
+                },
+                ignoreConsecutiveComments: {
+                  type: 'boolean'
+                }
+              },
+              additionalProperties: false
+            },
+            {
+              type: 'object',
+              properties: {
+                line: {
+                  type: 'object',
+                  properties: {
+                    ignorePattern: {
+                      type: 'string'
+                    },
+                    ignoreInlineComments: {
+                      type: 'boolean'
+                    },
+                    ignoreConsecutiveComments: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                block: {
+                  type: 'object',
+                  properties: {
+                    ignorePattern: {
+                      type: 'string'
+                    },
+                    ignoreInlineComments: {
+                      type: 'boolean'
+                    },
+                    ignoreConsecutiveComments: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'class-methods-use-this',
+    meta: {
+      docs: {
+        description: 'enforce that class methods utilize `this`',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/class-methods-use-this'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            exceptMethods: {
+              type: 'array',
+              items: {
+                type: 'string'
+              }
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'comma-dangle',
+    meta: {
+      docs: {
+        description: 'require or disallow trailing commas',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/comma-dangle'
+      },
+      fixable: 'code',
+      schema: {
+        definitions: {
+          value: {
+            'enum': [
+              'always-multiline',
+              'always',
+              'never',
+              'only-multiline'
+            ]
+          },
+          valueWithIgnore: {
+            'enum': [
+              'always-multiline',
+              'always',
+              'ignore',
+              'never',
+              'only-multiline'
+            ]
+          }
+        },
+        type: 'array',
+        items: [
+          {
+            oneOf: [
+              {
+                $ref: '#/definitions/value'
+              },
+              {
+                type: 'object',
+                properties: {
+                  arrays: {
+                    $ref: '#/definitions/valueWithIgnore'
+                  },
+                  objects: {
+                    $ref: '#/definitions/valueWithIgnore'
+                  },
+                  imports: {
+                    $ref: '#/definitions/valueWithIgnore'
+                  },
+                  exports: {
+                    $ref: '#/definitions/valueWithIgnore'
+                  },
+                  functions: {
+                    $ref: '#/definitions/valueWithIgnore'
+                  }
+                },
+                additionalProperties: false
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    id: 'comma-spacing',
+    meta: {
+      docs: {
+        description: 'enforce consistent spacing before and after commas',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/comma-spacing'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            before: {
+              type: 'boolean'
+            },
+            after: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'comma-style',
+    meta: {
+      docs: {
+        description: 'enforce consistent comma style',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/comma-style'
+      },
+      fixable: 'code',
+      schema: [
+        {
+          'enum': [
+            'first',
+            'last'
+          ]
+        },
+        {
+          type: 'object',
+          properties: {
+            exceptions: {
+              type: 'object',
+              additionalProperties: {
+                type: 'boolean'
+              }
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'complexity',
+    meta: {
+      docs: {
+        description: 'enforce a maximum cyclomatic complexity allowed in a program',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/complexity'
+      },
+      schema: [
+        {
+          oneOf: [
+            {
+              type: 'integer',
+              minimum: 0
+            },
+            {
+              type: 'object',
+              properties: {
+                maximum: {
+                  type: 'integer',
+                  minimum: 0
+                },
+                max: {
+                  type: 'integer',
+                  minimum: 0
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'computed-property-spacing',
+    meta: {
+      docs: {
+        description: 'enforce consistent spacing inside computed property brackets',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/computed-property-spacing'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          'enum': [
+            'always',
+            'never'
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'consistent-return',
+    meta: {
+      docs: {
+        description: 'require `return` statements to either always or never specify values',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/consistent-return'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            treatUndefinedAsUnspecified: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'consistent-this',
+    meta: {
+      docs: {
+        description: 'enforce consistent naming when capturing the current execution context',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/consistent-this'
+      },
+      schema: {
+        type: 'array',
+        items: {
+          type: 'string',
+          minLength: 1
+        },
+        uniqueItems: true
+      }
+    }
+  },
+  {
+    id: 'constructor-super',
+    meta: {
+      docs: {
+        description: 'require `super()` calls in constructors',
+        category: 'ECMAScript 6',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/constructor-super'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'curly',
+    meta: {
+      docs: {
+        description: 'enforce consistent brace style for all control statements',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/curly'
+      },
+      schema: {
+        anyOf: [
+          {
+            type: 'array',
+            items: [
+              {
+                'enum': [
+                  'all'
+                ]
+              }
+            ],
+            minItems: 0,
+            maxItems: 1
+          },
+          {
+            type: 'array',
+            items: [
+              {
+                'enum': [
+                  'multi',
+                  'multi-line',
+                  'multi-or-nest'
+                ]
+              },
+              {
+                'enum': [
+                  'consistent'
+                ]
+              }
+            ],
+            minItems: 0,
+            maxItems: 2
+          }
+        ]
+      },
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'default-case',
+    meta: {
+      docs: {
+        description: 'require `default` cases in `switch` statements',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/default-case'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            commentPattern: {
+              type: 'string'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'dot-location',
+    meta: {
+      docs: {
+        description: 'enforce consistent newlines before and after dots',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/dot-location'
+      },
+      schema: [
+        {
+          'enum': [
+            'object',
+            'property'
+          ]
+        }
+      ],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'dot-notation',
+    meta: {
+      docs: {
+        description: 'enforce dot notation whenever possible',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/dot-notation'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            allowKeywords: {
+              type: 'boolean'
+            },
+            allowPattern: {
+              type: 'string'
+            }
+          },
+          additionalProperties: false
+        }
+      ],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'eol-last',
+    meta: {
+      docs: {
+        description: 'require or disallow newline at the end of files',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/eol-last'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          'enum': [
+            'always',
+            'never',
+            'unix',
+            'windows'
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'eqeqeq',
+    meta: {
+      docs: {
+        description: 'require the use of `===` and `!==`',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/eqeqeq'
+      },
+      schema: {
+        anyOf: [
+          {
+            type: 'array',
+            items: [
+              {
+                'enum': [
+                  'always'
+                ]
+              },
+              {
+                type: 'object',
+                properties: {
+                  'null': {
+                    'enum': [
+                      'always',
+                      'never',
+                      'ignore'
+                    ]
+                  }
+                },
+                additionalProperties: false
+              }
+            ],
+            additionalItems: false
+          },
+          {
+            type: 'array',
+            items: [
+              {
+                'enum': [
+                  'smart',
+                  'allow-null'
+                ]
+              }
+            ],
+            additionalItems: false
+          }
+        ]
+      },
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'for-direction',
+    meta: {
+      docs: {
+        description: 'enforce "for" loop update clause moving the counter in the right direction.',
+        category: 'Possible Errors',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/for-direction'
+      },
+      fixable: null,
+      schema: []
+    }
+  },
+  {
+    id: 'func-call-spacing',
+    meta: {
+      docs: {
+        description: 'require or disallow spacing between function identifiers and their invocations',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/func-call-spacing'
+      },
+      fixable: 'whitespace',
+      schema: {
+        anyOf: [
+          {
+            type: 'array',
+            items: [
+              {
+                'enum': [
+                  'never'
+                ]
+              }
+            ],
+            minItems: 0,
+            maxItems: 1
+          },
+          {
+            type: 'array',
+            items: [
+              {
+                'enum': [
+                  'always'
+                ]
+              },
+              {
+                type: 'object',
+                properties: {
+                  allowNewlines: {
+                    type: 'boolean'
+                  }
+                },
+                additionalProperties: false
+              }
+            ],
+            minItems: 0,
+            maxItems: 2
+          }
+        ]
+      }
+    }
+  },
+  {
+    id: 'func-name-matching',
+    meta: {
+      docs: {
+        description: 'require function names to match the name of the variable or property to which they are assigned',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/func-name-matching'
+      },
+      schema: {
+        anyOf: [
+          {
+            type: 'array',
+            additionalItems: false,
+            items: [
+              {
+                'enum': [
+                  'always',
+                  'never'
+                ]
+              },
+              {
+                type: 'object',
+                properties: {
+                  includeCommonJSModuleExports: {
+                    type: 'boolean'
+                  }
+                },
+                additionalProperties: false
+              }
+            ]
+          },
+          {
+            type: 'array',
+            additionalItems: false,
+            items: [
+              {
+                type: 'object',
+                properties: {
+                  includeCommonJSModuleExports: {
+                    type: 'boolean'
+                  }
+                },
+                additionalProperties: false
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    id: 'func-names',
+    meta: {
+      docs: {
+        description: 'require or disallow named `function` expressions',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/func-names'
+      },
+      schema: [
+        {
+          'enum': [
+            'always',
+            'as-needed',
+            'never'
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'func-style',
+    meta: {
+      docs: {
+        description: 'enforce the consistent use of either `function` declarations or expressions',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/func-style'
+      },
+      schema: [
+        {
+          'enum': [
+            'declaration',
+            'expression'
+          ]
+        },
+        {
+          type: 'object',
+          properties: {
+            allowArrowFunctions: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'function-paren-newline',
+    meta: {
+      docs: {
+        description: 'enforce consistent line breaks inside function parentheses',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/function-paren-newline'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          oneOf: [
+            {
+              'enum': [
+                'always',
+                'never',
+                'consistent',
+                'multiline'
+              ]
+            },
+            {
+              type: 'object',
+              properties: {
+                minItems: {
+                  type: 'integer',
+                  minimum: 0
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'generator-star-spacing',
+    meta: {
+      docs: {
+        description: 'enforce consistent spacing around `*` operators in generator functions',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/generator-star-spacing'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          oneOf: [
+            {
+              'enum': [
+                'before',
+                'after',
+                'both',
+                'neither'
+              ]
+            },
+            {
+              type: 'object',
+              properties: {
+                before: {
+                  type: 'boolean'
+                },
+                after: {
+                  type: 'boolean'
+                },
+                named: {
+                  oneOf: [
+                    {
+                      'enum': [
+                        'before',
+                        'after',
+                        'both',
+                        'neither'
+                      ]
+                    },
+                    {
+                      type: 'object',
+                      properties: {
+                        before: {
+                          type: 'boolean'
+                        },
+                        after: {
+                          type: 'boolean'
+                        }
+                      },
+                      additionalProperties: false
+                    }
+                  ]
+                },
+                anonymous: {
+                  oneOf: [
+                    {
+                      'enum': [
+                        'before',
+                        'after',
+                        'both',
+                        'neither'
+                      ]
+                    },
+                    {
+                      type: 'object',
+                      properties: {
+                        before: {
+                          type: 'boolean'
+                        },
+                        after: {
+                          type: 'boolean'
+                        }
+                      },
+                      additionalProperties: false
+                    }
+                  ]
+                },
+                method: {
+                  oneOf: [
+                    {
+                      'enum': [
+                        'before',
+                        'after',
+                        'both',
+                        'neither'
+                      ]
+                    },
+                    {
+                      type: 'object',
+                      properties: {
+                        before: {
+                          type: 'boolean'
+                        },
+                        after: {
+                          type: 'boolean'
+                        }
+                      },
+                      additionalProperties: false
+                    }
+                  ]
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'getter-return',
+    meta: {
+      docs: {
+        description: 'enforce `return` statements in getters',
+        category: 'Possible Errors',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/getter-return'
+      },
+      fixable: null,
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            allowImplicit: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'global-require',
+    meta: {
+      docs: {
+        description: 'require `require()` calls to be placed at top-level module scope',
+        category: 'Node.js and CommonJS',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/global-require'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'guard-for-in',
+    meta: {
+      docs: {
+        description: 'require `for-in` loops to include an `if` statement',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/guard-for-in'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'handle-callback-err',
+    meta: {
+      docs: {
+        description: 'require error handling in callbacks',
+        category: 'Node.js and CommonJS',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/handle-callback-err'
+      },
+      schema: [
+        {
+          type: 'string'
+        }
+      ]
+    }
+  },
+  {
+    id: 'id-blacklist',
+    meta: {
+      docs: {
+        description: 'disallow specified identifiers',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/id-blacklist'
+      },
+      schema: {
+        type: 'array',
+        items: {
+          type: 'string'
+        },
+        uniqueItems: true
+      }
+    }
+  },
+  {
+    id: 'id-length',
+    meta: {
+      docs: {
+        description: 'enforce minimum and maximum identifier lengths',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/id-length'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            min: {
+              type: 'number'
+            },
+            max: {
+              type: 'number'
+            },
+            exceptions: {
+              type: 'array',
+              uniqueItems: true,
+              items: {
+                type: 'string'
+              }
+            },
+            properties: {
+              'enum': [
+                'always',
+                'never'
+              ]
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'id-match',
+    meta: {
+      docs: {
+        description: 'require identifiers to match a specified regular expression',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/id-match'
+      },
+      schema: [
+        {
+          type: 'string'
+        },
+        {
+          type: 'object',
+          properties: {
+            properties: {
+              type: 'boolean'
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: 'implicit-arrow-linebreak',
+    meta: {
+      docs: {
+        description: 'enforce the location of arrow function bodies',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/implicit-arrow-linebreak'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          'enum': [
+            'beside',
+            'below'
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'indent-legacy',
+    meta: {
+      docs: {
+        description: 'enforce consistent indentation',
+        category: 'Stylistic Issues',
+        recommended: false,
+        replacedBy: [
+          'indent'
+        ],
+        url: 'https://eslint.org/docs/rules/indent-legacy'
+      },
+      deprecated: true,
+      fixable: 'whitespace',
+      schema: [
+        {
+          oneOf: [
+            {
+              'enum': [
+                'tab'
+              ]
+            },
+            {
+              type: 'integer',
+              minimum: 0
+            }
+          ]
+        },
+        {
+          type: 'object',
+          properties: {
+            SwitchCase: {
+              type: 'integer',
+              minimum: 0
+            },
+            VariableDeclarator: {
+              oneOf: [
+                {
+                  type: 'integer',
+                  minimum: 0
+                },
+                {
+                  type: 'object',
+                  properties: {
+                    'var': {
+                      type: 'integer',
+                      minimum: 0
+                    },
+                    let: {
+                      type: 'integer',
+                      minimum: 0
+                    },
+                    'const': {
+                      type: 'integer',
+                      minimum: 0
+                    }
+                  }
+                }
+              ]
+            },
+            outerIIFEBody: {
+              type: 'integer',
+              minimum: 0
+            },
+            MemberExpression: {
+              type: 'integer',
+              minimum: 0
+            },
+            FunctionDeclaration: {
+              type: 'object',
+              properties: {
+                parameters: {
+                  oneOf: [
+                    {
+                      type: 'integer',
+                      minimum: 0
+                    },
+                    {
+                      'enum': [
+                        'first'
+                      ]
+                    }
+                  ]
+                },
+                body: {
+                  type: 'integer',
+                  minimum: 0
+                }
+              }
+            },
+            FunctionExpression: {
+              type: 'object',
+              properties: {
+                parameters: {
+                  oneOf: [
+                    {
+                      type: 'integer',
+                      minimum: 0
+                    },
+                    {
+                      'enum': [
+                        'first'
+                      ]
+                    }
+                  ]
+                },
+                body: {
+                  type: 'integer',
+                  minimum: 0
+                }
+              }
+            },
+            CallExpression: {
+              type: 'object',
+              properties: {
+                parameters: {
+                  oneOf: [
+                    {
+                      type: 'integer',
+                      minimum: 0
+                    },
+                    {
+                      'enum': [
+                        'first'
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            ArrayExpression: {
+              oneOf: [
+                {
+                  type: 'integer',
+                  minimum: 0
+                },
+                {
+                  'enum': [
+                    'first'
+                  ]
+                }
+              ]
+            },
+            ObjectExpression: {
+              oneOf: [
+                {
+                  type: 'integer',
+                  minimum: 0
+                },
+                {
+                  'enum': [
+                    'first'
+                  ]
+                }
+              ]
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'indent',
+    meta: {
+      docs: {
+        description: 'enforce consistent indentation',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/indent'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          oneOf: [
+            {
+              'enum': [
+                'tab'
+              ]
+            },
+            {
+              type: 'integer',
+              minimum: 0
+            }
+          ]
+        },
+        {
+          type: 'object',
+          properties: {
+            SwitchCase: {
+              type: 'integer',
+              minimum: 0
+            },
+            VariableDeclarator: {
+              oneOf: [
+                {
+                  type: 'integer',
+                  minimum: 0
+                },
+                {
+                  type: 'object',
+                  properties: {
+                    'var': {
+                      type: 'integer',
+                      minimum: 0
+                    },
+                    let: {
+                      type: 'integer',
+                      minimum: 0
+                    },
+                    'const': {
+                      type: 'integer',
+                      minimum: 0
+                    }
+                  },
+                  additionalProperties: false
+                }
+              ]
+            },
+            outerIIFEBody: {
+              type: 'integer',
+              minimum: 0
+            },
+            MemberExpression: {
+              oneOf: [
+                {
+                  type: 'integer',
+                  minimum: 0
+                },
+                {
+                  'enum': [
+                    'off'
+                  ]
+                }
+              ]
+            },
+            FunctionDeclaration: {
+              type: 'object',
+              properties: {
+                parameters: {
+                  oneOf: [
+                    {
+                      type: 'integer',
+                      minimum: 0
+                    },
+                    {
+                      'enum': [
+                        'first',
+                        'off'
+                      ]
+                    }
+                  ]
+                },
+                body: {
+                  type: 'integer',
+                  minimum: 0
+                }
+              },
+              additionalProperties: false
+            },
+            FunctionExpression: {
+              type: 'object',
+              properties: {
+                parameters: {
+                  oneOf: [
+                    {
+                      type: 'integer',
+                      minimum: 0
+                    },
+                    {
+                      'enum': [
+                        'first',
+                        'off'
+                      ]
+                    }
+                  ]
+                },
+                body: {
+                  type: 'integer',
+                  minimum: 0
+                }
+              },
+              additionalProperties: false
+            },
+            CallExpression: {
+              type: 'object',
+              properties: {
+                arguments: {
+                  oneOf: [
+                    {
+                      type: 'integer',
+                      minimum: 0
+                    },
+                    {
+                      'enum': [
+                        'first',
+                        'off'
+                      ]
+                    }
+                  ]
+                }
+              },
+              additionalProperties: false
+            },
+            ArrayExpression: {
+              oneOf: [
+                {
+                  type: 'integer',
+                  minimum: 0
+                },
+                {
+                  'enum': [
+                    'first',
+                    'off'
+                  ]
+                }
+              ]
+            },
+            ObjectExpression: {
+              oneOf: [
+                {
+                  type: 'integer',
+                  minimum: 0
+                },
+                {
+                  'enum': [
+                    'first',
+                    'off'
+                  ]
+                }
+              ]
+            },
+            ImportDeclaration: {
+              oneOf: [
+                {
+                  type: 'integer',
+                  minimum: 0
+                },
+                {
+                  'enum': [
+                    'first',
+                    'off'
+                  ]
+                }
+              ]
+            },
+            flatTernaryExpressions: {
+              type: 'boolean'
+            },
+            ignoredNodes: {
+              type: 'array',
+              items: {
+                type: 'string',
+                not: {
+                  pattern: ':exit$'
+                }
+              }
+            },
+            ignoreComments: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'init-declarations',
+    meta: {
+      docs: {
+        description: 'require or disallow initialization in variable declarations',
+        category: 'Variables',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/init-declarations'
+      },
+      schema: {
+        anyOf: [
+          {
+            type: 'array',
+            items: [
+              {
+                'enum': [
+                  'always'
+                ]
+              }
+            ],
+            minItems: 0,
+            maxItems: 1
+          },
+          {
+            type: 'array',
+            items: [
+              {
+                'enum': [
+                  'never'
+                ]
+              },
+              {
+                type: 'object',
+                properties: {
+                  ignoreForLoopInit: {
+                    type: 'boolean'
+                  }
+                },
+                additionalProperties: false
+              }
+            ],
+            minItems: 0,
+            maxItems: 2
+          }
+        ]
+      }
+    }
+  },
+  {
+    id: 'jsx-quotes',
+    meta: {
+      docs: {
+        description: 'enforce the consistent use of either double or single quotes in JSX attributes',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/jsx-quotes'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          'enum': [
+            'prefer-single',
+            'prefer-double'
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'key-spacing',
+    meta: {
+      docs: {
+        description: 'enforce consistent spacing between keys and values in object literal properties',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/key-spacing'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          anyOf: [
+            {
+              type: 'object',
+              properties: {
+                align: {
+                  anyOf: [
+                    {
+                      'enum': [
+                        'colon',
+                        'value'
+                      ]
+                    },
+                    {
+                      type: 'object',
+                      properties: {
+                        mode: {
+                          'enum': [
+                            'strict',
+                            'minimum'
+                          ]
+                        },
+                        on: {
+                          'enum': [
+                            'colon',
+                            'value'
+                          ]
+                        },
+                        beforeColon: {
+                          type: 'boolean'
+                        },
+                        afterColon: {
+                          type: 'boolean'
+                        }
+                      },
+                      additionalProperties: false
+                    }
+                  ]
+                },
+                mode: {
+                  'enum': [
+                    'strict',
+                    'minimum'
+                  ]
+                },
+                beforeColon: {
+                  type: 'boolean'
+                },
+                afterColon: {
+                  type: 'boolean'
+                }
+              },
+              additionalProperties: false
+            },
+            {
+              type: 'object',
+              properties: {
+                singleLine: {
+                  type: 'object',
+                  properties: {
+                    mode: {
+                      'enum': [
+                        'strict',
+                        'minimum'
+                      ]
+                    },
+                    beforeColon: {
+                      type: 'boolean'
+                    },
+                    afterColon: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                multiLine: {
+                  type: 'object',
+                  properties: {
+                    align: {
+                      anyOf: [
+                        {
+                          'enum': [
+                            'colon',
+                            'value'
+                          ]
+                        },
+                        {
+                          type: 'object',
+                          properties: {
+                            mode: {
+                              'enum': [
+                                'strict',
+                                'minimum'
+                              ]
+                            },
+                            on: {
+                              'enum': [
+                                'colon',
+                                'value'
+                              ]
+                            },
+                            beforeColon: {
+                              type: 'boolean'
+                            },
+                            afterColon: {
+                              type: 'boolean'
+                            }
+                          },
+                          additionalProperties: false
+                        }
+                      ]
+                    },
+                    mode: {
+                      'enum': [
+                        'strict',
+                        'minimum'
+                      ]
+                    },
+                    beforeColon: {
+                      type: 'boolean'
+                    },
+                    afterColon: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                }
+              },
+              additionalProperties: false
+            },
+            {
+              type: 'object',
+              properties: {
+                singleLine: {
+                  type: 'object',
+                  properties: {
+                    mode: {
+                      'enum': [
+                        'strict',
+                        'minimum'
+                      ]
+                    },
+                    beforeColon: {
+                      type: 'boolean'
+                    },
+                    afterColon: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                multiLine: {
+                  type: 'object',
+                  properties: {
+                    mode: {
+                      'enum': [
+                        'strict',
+                        'minimum'
+                      ]
+                    },
+                    beforeColon: {
+                      type: 'boolean'
+                    },
+                    afterColon: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                align: {
+                  type: 'object',
+                  properties: {
+                    mode: {
+                      'enum': [
+                        'strict',
+                        'minimum'
+                      ]
+                    },
+                    on: {
+                      'enum': [
+                        'colon',
+                        'value'
+                      ]
+                    },
+                    beforeColon: {
+                      type: 'boolean'
+                    },
+                    afterColon: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'keyword-spacing',
+    meta: {
+      docs: {
+        description: 'enforce consistent spacing before and after keywords',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/keyword-spacing'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            before: {
+              type: 'boolean'
+            },
+            after: {
+              type: 'boolean'
+            },
+            overrides: {
+              type: 'object',
+              properties: {
+                'abstract': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                as: {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                async: {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                await: {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'boolean': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'break': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'byte': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'case': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'catch': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'char': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'class': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'const': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'continue': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'debugger': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'default': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'delete': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'do': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'double': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'else': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'enum': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'export': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'extends': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'false': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'final': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'finally': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'float': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'for': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                from: {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'function': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                get: {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'goto': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'if': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'implements': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'import': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'in': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'instanceof': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'int': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'interface': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                let: {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'long': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'native': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'new': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'null': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                of: {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'package': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'private': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'protected': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'public': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'return': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                set: {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'short': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'static': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'super': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'switch': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'synchronized': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'this': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'throw': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'throws': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'transient': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'true': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'try': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'typeof': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'var': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'void': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'volatile': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'while': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                'with': {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                yield: {
+                  type: 'object',
+                  properties: {
+                    before: {
+                      type: 'boolean'
+                    },
+                    after: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                }
+              },
+              additionalProperties: false
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'line-comment-position',
+    meta: {
+      docs: {
+        description: 'enforce position of line comments',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/line-comment-position'
+      },
+      schema: [
+        {
+          oneOf: [
+            {
+              'enum': [
+                'above',
+                'beside'
+              ]
+            },
+            {
+              type: 'object',
+              properties: {
+                position: {
+                  'enum': [
+                    'above',
+                    'beside'
+                  ]
+                },
+                ignorePattern: {
+                  type: 'string'
+                },
+                applyDefaultPatterns: {
+                  type: 'boolean'
+                },
+                applyDefaultIgnorePatterns: {
+                  type: 'boolean'
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'linebreak-style',
+    meta: {
+      docs: {
+        description: 'enforce consistent linebreak style',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/linebreak-style'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          'enum': [
+            'unix',
+            'windows'
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'lines-around-comment',
+    meta: {
+      docs: {
+        description: 'require empty lines around comments',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/lines-around-comment'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            beforeBlockComment: {
+              type: 'boolean'
+            },
+            afterBlockComment: {
+              type: 'boolean'
+            },
+            beforeLineComment: {
+              type: 'boolean'
+            },
+            afterLineComment: {
+              type: 'boolean'
+            },
+            allowBlockStart: {
+              type: 'boolean'
+            },
+            allowBlockEnd: {
+              type: 'boolean'
+            },
+            allowClassStart: {
+              type: 'boolean'
+            },
+            allowClassEnd: {
+              type: 'boolean'
+            },
+            allowObjectStart: {
+              type: 'boolean'
+            },
+            allowObjectEnd: {
+              type: 'boolean'
+            },
+            allowArrayStart: {
+              type: 'boolean'
+            },
+            allowArrayEnd: {
+              type: 'boolean'
+            },
+            ignorePattern: {
+              type: 'string'
+            },
+            applyDefaultIgnorePatterns: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'lines-around-directive',
+    meta: {
+      docs: {
+        description: 'require or disallow newlines around directives',
+        category: 'Stylistic Issues',
+        recommended: false,
+        replacedBy: [
+          'padding-line-between-statements'
+        ],
+        url: 'https://eslint.org/docs/rules/lines-around-directive'
+      },
+      schema: [
+        {
+          oneOf: [
+            {
+              'enum': [
+                'always',
+                'never'
+              ]
+            },
+            {
+              type: 'object',
+              properties: {
+                before: {
+                  'enum': [
+                    'always',
+                    'never'
+                  ]
+                },
+                after: {
+                  'enum': [
+                    'always',
+                    'never'
+                  ]
+                }
+              },
+              additionalProperties: false,
+              minProperties: 2
+            }
+          ]
+        }
+      ],
+      fixable: 'whitespace',
+      deprecated: true
+    }
+  },
+  {
+    id: 'lines-between-class-members',
+    meta: {
+      docs: {
+        description: 'require or disallow an empty line between class members',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/lines-between-class-members'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          'enum': [
+            'always',
+            'never'
+          ]
+        },
+        {
+          type: 'object',
+          properties: {
+            exceptAfterSingleLine: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'max-depth',
+    meta: {
+      docs: {
+        description: 'enforce a maximum depth that blocks can be nested',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/max-depth'
+      },
+      schema: [
+        {
+          oneOf: [
+            {
+              type: 'integer',
+              minimum: 0
+            },
+            {
+              type: 'object',
+              properties: {
+                maximum: {
+                  type: 'integer',
+                  minimum: 0
+                },
+                max: {
+                  type: 'integer',
+                  minimum: 0
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'max-len',
+    meta: {
+      docs: {
+        description: 'enforce a maximum line length',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/max-len'
+      },
+      schema: [
+        {
+          anyOf: [
+            {
+              type: 'object',
+              properties: {
+                code: {
+                  type: 'integer',
+                  minimum: 0
+                },
+                comments: {
+                  type: 'integer',
+                  minimum: 0
+                },
+                tabWidth: {
+                  type: 'integer',
+                  minimum: 0
+                },
+                ignorePattern: {
+                  type: 'string'
+                },
+                ignoreComments: {
+                  type: 'boolean'
+                },
+                ignoreStrings: {
+                  type: 'boolean'
+                },
+                ignoreUrls: {
+                  type: 'boolean'
+                },
+                ignoreTemplateLiterals: {
+                  type: 'boolean'
+                },
+                ignoreRegExpLiterals: {
+                  type: 'boolean'
+                },
+                ignoreTrailingComments: {
+                  type: 'boolean'
+                }
+              },
+              additionalProperties: false
+            },
+            {
+              type: 'integer',
+              minimum: 0
+            }
+          ]
+        },
+        {
+          anyOf: [
+            {
+              type: 'object',
+              properties: {
+                code: {
+                  type: 'integer',
+                  minimum: 0
+                },
+                comments: {
+                  type: 'integer',
+                  minimum: 0
+                },
+                tabWidth: {
+                  type: 'integer',
+                  minimum: 0
+                },
+                ignorePattern: {
+                  type: 'string'
+                },
+                ignoreComments: {
+                  type: 'boolean'
+                },
+                ignoreStrings: {
+                  type: 'boolean'
+                },
+                ignoreUrls: {
+                  type: 'boolean'
+                },
+                ignoreTemplateLiterals: {
+                  type: 'boolean'
+                },
+                ignoreRegExpLiterals: {
+                  type: 'boolean'
+                },
+                ignoreTrailingComments: {
+                  type: 'boolean'
+                }
+              },
+              additionalProperties: false
+            },
+            {
+              type: 'integer',
+              minimum: 0
+            }
+          ]
+        },
+        {
+          type: 'object',
+          properties: {
+            code: {
+              type: 'integer',
+              minimum: 0
+            },
+            comments: {
+              type: 'integer',
+              minimum: 0
+            },
+            tabWidth: {
+              type: 'integer',
+              minimum: 0
+            },
+            ignorePattern: {
+              type: 'string'
+            },
+            ignoreComments: {
+              type: 'boolean'
+            },
+            ignoreStrings: {
+              type: 'boolean'
+            },
+            ignoreUrls: {
+              type: 'boolean'
+            },
+            ignoreTemplateLiterals: {
+              type: 'boolean'
+            },
+            ignoreRegExpLiterals: {
+              type: 'boolean'
+            },
+            ignoreTrailingComments: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'max-lines',
+    meta: {
+      docs: {
+        description: 'enforce a maximum number of lines per file',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/max-lines'
+      },
+      schema: [
+        {
+          oneOf: [
+            {
+              type: 'integer',
+              minimum: 0
+            },
+            {
+              type: 'object',
+              properties: {
+                max: {
+                  type: 'integer',
+                  minimum: 0
+                },
+                skipComments: {
+                  type: 'boolean'
+                },
+                skipBlankLines: {
+                  type: 'boolean'
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'max-nested-callbacks',
+    meta: {
+      docs: {
+        description: 'enforce a maximum depth that callbacks can be nested',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/max-nested-callbacks'
+      },
+      schema: [
+        {
+          oneOf: [
+            {
+              type: 'integer',
+              minimum: 0
+            },
+            {
+              type: 'object',
+              properties: {
+                maximum: {
+                  type: 'integer',
+                  minimum: 0
+                },
+                max: {
+                  type: 'integer',
+                  minimum: 0
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'max-params',
+    meta: {
+      docs: {
+        description: 'enforce a maximum number of parameters in function definitions',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/max-params'
+      },
+      schema: [
+        {
+          oneOf: [
+            {
+              type: 'integer',
+              minimum: 0
+            },
+            {
+              type: 'object',
+              properties: {
+                maximum: {
+                  type: 'integer',
+                  minimum: 0
+                },
+                max: {
+                  type: 'integer',
+                  minimum: 0
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'max-statements-per-line',
+    meta: {
+      docs: {
+        description: 'enforce a maximum number of statements allowed per line',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/max-statements-per-line'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            max: {
+              type: 'integer',
+              minimum: 1
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'max-statements',
+    meta: {
+      docs: {
+        description: 'enforce a maximum number of statements allowed in function blocks',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/max-statements'
+      },
+      schema: [
+        {
+          oneOf: [
+            {
+              type: 'integer',
+              minimum: 0
+            },
+            {
+              type: 'object',
+              properties: {
+                maximum: {
+                  type: 'integer',
+                  minimum: 0
+                },
+                max: {
+                  type: 'integer',
+                  minimum: 0
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        },
+        {
+          type: 'object',
+          properties: {
+            ignoreTopLevelFunctions: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'multiline-comment-style',
+    meta: {
+      docs: {
+        description: 'enforce a particular style for multiline comments',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/multiline-comment-style'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          'enum': [
+            'starred-block',
+            'separate-lines',
+            'bare-block'
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'multiline-ternary',
+    meta: {
+      docs: {
+        description: 'enforce newlines between operands of ternary expressions',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/multiline-ternary'
+      },
+      schema: [
+        {
+          'enum': [
+            'always',
+            'always-multiline',
+            'never'
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'new-cap',
+    meta: {
+      docs: {
+        description: 'require constructor names to begin with a capital letter',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/new-cap'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            newIsCap: {
+              type: 'boolean'
+            },
+            capIsNew: {
+              type: 'boolean'
+            },
+            newIsCapExceptions: {
+              type: 'array',
+              items: {
+                type: 'string'
+              }
+            },
+            newIsCapExceptionPattern: {
+              type: 'string'
+            },
+            capIsNewExceptions: {
+              type: 'array',
+              items: {
+                type: 'string'
+              }
+            },
+            capIsNewExceptionPattern: {
+              type: 'string'
+            },
+            properties: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'new-parens',
+    meta: {
+      docs: {
+        description: 'require parentheses when invoking a constructor with no arguments',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/new-parens'
+      },
+      schema: [],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'newline-after-var',
+    meta: {
+      docs: {
+        description: 'require or disallow an empty line after variable declarations',
+        category: 'Stylistic Issues',
+        recommended: false,
+        replacedBy: [
+          'padding-line-between-statements'
+        ],
+        url: 'https://eslint.org/docs/rules/newline-after-var'
+      },
+      schema: [
+        {
+          'enum': [
+            'never',
+            'always'
+          ]
+        }
+      ],
+      fixable: 'whitespace',
+      deprecated: true
+    }
+  },
+  {
+    id: 'newline-before-return',
+    meta: {
+      docs: {
+        description: 'require an empty line before `return` statements',
+        category: 'Stylistic Issues',
+        recommended: false,
+        replacedBy: [
+          'padding-line-between-statements'
+        ],
+        url: 'https://eslint.org/docs/rules/newline-before-return'
+      },
+      fixable: 'whitespace',
+      schema: [],
+      deprecated: true
+    }
+  },
+  {
+    id: 'newline-per-chained-call',
+    meta: {
+      docs: {
+        description: 'require a newline after each call in a method chain',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/newline-per-chained-call'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            ignoreChainWithDepth: {
+              type: 'integer',
+              minimum: 1,
+              maximum: 10
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-alert',
+    meta: {
+      docs: {
+        description: 'disallow the use of `alert`, `confirm`, and `prompt`',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-alert'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-array-constructor',
+    meta: {
+      docs: {
+        description: 'disallow `Array` constructors',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-array-constructor'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-await-in-loop',
+    meta: {
+      docs: {
+        description: 'disallow `await` inside of loops',
+        category: 'Possible Errors',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-await-in-loop'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-bitwise',
+    meta: {
+      docs: {
+        description: 'disallow bitwise operators',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-bitwise'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            allow: {
+              type: 'array',
+              items: {
+                'enum': [
+                  '^',
+                  '|',
+                  '&',
+                  '<<',
+                  '>>',
+                  '>>>',
+                  '^=',
+                  '|=',
+                  '&=',
+                  '<<=',
+                  '>>=',
+                  '>>>=',
+                  '~'
+                ]
+              },
+              uniqueItems: true
+            },
+            int32Hint: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-buffer-constructor',
+    meta: {
+      docs: {
+        description: 'disallow use of the Buffer() constructor',
+        category: 'Node.js and CommonJS',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-buffer-constructor'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-caller',
+    meta: {
+      docs: {
+        description: 'disallow the use of `arguments.caller` or `arguments.callee`',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-caller'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-case-declarations',
+    meta: {
+      docs: {
+        description: 'disallow lexical declarations in case clauses',
+        category: 'Best Practices',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-case-declarations'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-catch-shadow',
+    meta: {
+      docs: {
+        description: 'disallow `catch` clause parameters from shadowing variables in the outer scope',
+        category: 'Variables',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-catch-shadow'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-class-assign',
+    meta: {
+      docs: {
+        description: 'disallow reassigning class members',
+        category: 'ECMAScript 6',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-class-assign'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-compare-neg-zero',
+    meta: {
+      docs: {
+        description: 'disallow comparing against -0',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-compare-neg-zero'
+      },
+      fixable: null,
+      schema: []
+    }
+  },
+  {
+    id: 'no-cond-assign',
+    meta: {
+      docs: {
+        description: 'disallow assignment operators in conditional expressions',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-cond-assign'
+      },
+      schema: [
+        {
+          'enum': [
+            'except-parens',
+            'always'
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-confusing-arrow',
+    meta: {
+      docs: {
+        description: 'disallow arrow functions where they could be confused with comparisons',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-confusing-arrow'
+      },
+      fixable: 'code',
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            allowParens: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-console',
+    meta: {
+      docs: {
+        description: 'disallow the use of `console`',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-console'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            allow: {
+              type: 'array',
+              items: {
+                type: 'string'
+              },
+              minItems: 1,
+              uniqueItems: true
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-const-assign',
+    meta: {
+      docs: {
+        description: 'disallow reassigning `const` variables',
+        category: 'ECMAScript 6',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-const-assign'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-constant-condition',
+    meta: {
+      docs: {
+        description: 'disallow constant expressions in conditions',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-constant-condition'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            checkLoops: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-continue',
+    meta: {
+      docs: {
+        description: 'disallow `continue` statements',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-continue'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-control-regex',
+    meta: {
+      docs: {
+        description: 'disallow control characters in regular expressions',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-control-regex'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-debugger',
+    meta: {
+      docs: {
+        description: 'disallow the use of `debugger`',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-debugger'
+      },
+      fixable: 'code',
+      schema: []
+    }
+  },
+  {
+    id: 'no-delete-var',
+    meta: {
+      docs: {
+        description: 'disallow deleting variables',
+        category: 'Variables',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-delete-var'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-div-regex',
+    meta: {
+      docs: {
+        description: 'disallow division operators explicitly at the beginning of regular expressions',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-div-regex'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-dupe-args',
+    meta: {
+      docs: {
+        description: 'disallow duplicate arguments in `function` definitions',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-dupe-args'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-dupe-class-members',
+    meta: {
+      docs: {
+        description: 'disallow duplicate class members',
+        category: 'ECMAScript 6',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-dupe-class-members'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-dupe-keys',
+    meta: {
+      docs: {
+        description: 'disallow duplicate keys in object literals',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-dupe-keys'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-duplicate-case',
+    meta: {
+      docs: {
+        description: 'disallow duplicate case labels',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-duplicate-case'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-duplicate-imports',
+    meta: {
+      docs: {
+        description: 'disallow duplicate module imports',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-duplicate-imports'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            includeExports: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-else-return',
+    meta: {
+      docs: {
+        description: 'disallow `else` blocks after `return` statements in `if` statements',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-else-return'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            allowElseIf: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'no-empty-character-class',
+    meta: {
+      docs: {
+        description: 'disallow empty character classes in regular expressions',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-empty-character-class'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-empty-function',
+    meta: {
+      docs: {
+        description: 'disallow empty functions',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-empty-function'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            allow: {
+              type: 'array',
+              items: {
+                'enum': [
+                  'functions',
+                  'arrowFunctions',
+                  'generatorFunctions',
+                  'methods',
+                  'generatorMethods',
+                  'getters',
+                  'setters',
+                  'constructors'
+                ]
+              },
+              uniqueItems: true
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-empty-pattern',
+    meta: {
+      docs: {
+        description: 'disallow empty destructuring patterns',
+        category: 'Best Practices',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-empty-pattern'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-empty',
+    meta: {
+      docs: {
+        description: 'disallow empty block statements',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-empty'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            allowEmptyCatch: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-eq-null',
+    meta: {
+      docs: {
+        description: 'disallow `null` comparisons without type-checking operators',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-eq-null'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-eval',
+    meta: {
+      docs: {
+        description: 'disallow the use of `eval()`',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-eval'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            allowIndirect: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-ex-assign',
+    meta: {
+      docs: {
+        description: 'disallow reassigning exceptions in `catch` clauses',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-ex-assign'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-extend-native',
+    meta: {
+      docs: {
+        description: 'disallow extending native types',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-extend-native'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            exceptions: {
+              type: 'array',
+              items: {
+                type: 'string'
+              },
+              uniqueItems: true
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-extra-bind',
+    meta: {
+      docs: {
+        description: 'disallow unnecessary calls to `.bind()`',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-extra-bind'
+      },
+      schema: [],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'no-extra-boolean-cast',
+    meta: {
+      docs: {
+        description: 'disallow unnecessary boolean casts',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-extra-boolean-cast'
+      },
+      schema: [],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'no-extra-label',
+    meta: {
+      docs: {
+        description: 'disallow unnecessary labels',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-extra-label'
+      },
+      schema: [],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'no-extra-parens',
+    meta: {
+      docs: {
+        description: 'disallow unnecessary parentheses',
+        category: 'Possible Errors',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-extra-parens'
+      },
+      fixable: 'code',
+      schema: {
+        anyOf: [
+          {
+            type: 'array',
+            items: [
+              {
+                'enum': [
+                  'functions'
+                ]
+              }
+            ],
+            minItems: 0,
+            maxItems: 1
+          },
+          {
+            type: 'array',
+            items: [
+              {
+                'enum': [
+                  'all'
+                ]
+              },
+              {
+                type: 'object',
+                properties: {
+                  conditionalAssign: {
+                    type: 'boolean'
+                  },
+                  nestedBinaryExpressions: {
+                    type: 'boolean'
+                  },
+                  returnAssign: {
+                    type: 'boolean'
+                  },
+                  ignoreJSX: {
+                    'enum': [
+                      'none',
+                      'all',
+                      'single-line',
+                      'multi-line'
+                    ]
+                  },
+                  enforceForArrowConditionals: {
+                    type: 'boolean'
+                  }
+                },
+                additionalProperties: false
+              }
+            ],
+            minItems: 0,
+            maxItems: 2
+          }
+        ]
+      }
+    }
+  },
+  {
+    id: 'no-extra-semi',
+    meta: {
+      docs: {
+        description: 'disallow unnecessary semicolons',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-extra-semi'
+      },
+      fixable: 'code',
+      schema: []
+    }
+  },
+  {
+    id: 'no-fallthrough',
+    meta: {
+      docs: {
+        description: 'disallow fallthrough of `case` statements',
+        category: 'Best Practices',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-fallthrough'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            commentPattern: {
+              type: 'string'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-floating-decimal',
+    meta: {
+      docs: {
+        description: 'disallow leading or trailing decimal points in numeric literals',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-floating-decimal'
+      },
+      schema: [],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'no-func-assign',
+    meta: {
+      docs: {
+        description: 'disallow reassigning `function` declarations',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-func-assign'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-global-assign',
+    meta: {
+      docs: {
+        description: 'disallow assignments to native objects or read-only global variables',
+        category: 'Best Practices',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-global-assign'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            exceptions: {
+              type: 'array',
+              items: {
+                type: 'string'
+              },
+              uniqueItems: true
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-implicit-coercion',
+    meta: {
+      docs: {
+        description: 'disallow shorthand type conversions',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-implicit-coercion'
+      },
+      fixable: 'code',
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            'boolean': {
+              type: 'boolean'
+            },
+            number: {
+              type: 'boolean'
+            },
+            string: {
+              type: 'boolean'
+            },
+            allow: {
+              type: 'array',
+              items: {
+                'enum': [
+                  '~',
+                  '!!',
+                  '+',
+                  '*'
+                ]
+              },
+              uniqueItems: true
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-implicit-globals',
+    meta: {
+      docs: {
+        description: 'disallow variable and `function` declarations in the global scope',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-implicit-globals'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-implied-eval',
+    meta: {
+      docs: {
+        description: 'disallow the use of `eval()`-like methods',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-implied-eval'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-inline-comments',
+    meta: {
+      docs: {
+        description: 'disallow inline comments after code',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-inline-comments'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-inner-declarations',
+    meta: {
+      docs: {
+        description: 'disallow variable or `function` declarations in nested blocks',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-inner-declarations'
+      },
+      schema: [
+        {
+          'enum': [
+            'functions',
+            'both'
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-invalid-regexp',
+    meta: {
+      docs: {
+        description: 'disallow invalid regular expression strings in `RegExp` constructors',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-invalid-regexp'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            allowConstructorFlags: {
+              type: 'array',
+              items: {
+                type: 'string'
+              }
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-invalid-this',
+    meta: {
+      docs: {
+        description: 'disallow `this` keywords outside of classes or class-like objects',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-invalid-this'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-irregular-whitespace',
+    meta: {
+      docs: {
+        description: 'disallow irregular whitespace outside of strings and comments',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-irregular-whitespace'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            skipComments: {
+              type: 'boolean'
+            },
+            skipStrings: {
+              type: 'boolean'
+            },
+            skipTemplates: {
+              type: 'boolean'
+            },
+            skipRegExps: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-iterator',
+    meta: {
+      docs: {
+        description: 'disallow the use of the `__iterator__` property',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-iterator'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-label-var',
+    meta: {
+      docs: {
+        description: 'disallow labels that share a name with a variable',
+        category: 'Variables',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-label-var'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-labels',
+    meta: {
+      docs: {
+        description: 'disallow labeled statements',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-labels'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            allowLoop: {
+              type: 'boolean'
+            },
+            allowSwitch: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-lone-blocks',
+    meta: {
+      docs: {
+        description: 'disallow unnecessary nested blocks',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-lone-blocks'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-lonely-if',
+    meta: {
+      docs: {
+        description: 'disallow `if` statements as the only statement in `else` blocks',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-lonely-if'
+      },
+      schema: [],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'no-loop-func',
+    meta: {
+      docs: {
+        description: 'disallow `function` declarations and expressions inside loop statements',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-loop-func'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-magic-numbers',
+    meta: {
+      docs: {
+        description: 'disallow magic numbers',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-magic-numbers'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            detectObjects: {
+              type: 'boolean'
+            },
+            enforceConst: {
+              type: 'boolean'
+            },
+            ignore: {
+              type: 'array',
+              items: {
+                type: 'number'
+              },
+              uniqueItems: true
+            },
+            ignoreArrayIndexes: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-mixed-operators',
+    meta: {
+      docs: {
+        description: 'disallow mixed binary operators',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-mixed-operators'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            groups: {
+              type: 'array',
+              items: {
+                type: 'array',
+                items: {
+                  'enum': [
+                    '+',
+                    '-',
+                    '*',
+                    '/',
+                    '%',
+                    '**',
+                    '&',
+                    '|',
+                    '^',
+                    '~',
+                    '<<',
+                    '>>',
+                    '>>>',
+                    '==',
+                    '!=',
+                    '===',
+                    '!==',
+                    '>',
+                    '>=',
+                    '<',
+                    '<=',
+                    '&&',
+                    '||',
+                    'in',
+                    'instanceof'
+                  ]
+                },
+                minItems: 2,
+                uniqueItems: true
+              },
+              uniqueItems: true
+            },
+            allowSamePrecedence: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-mixed-requires',
+    meta: {
+      docs: {
+        description: 'disallow `require` calls to be mixed with regular variable declarations',
+        category: 'Node.js and CommonJS',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-mixed-requires'
+      },
+      schema: [
+        {
+          oneOf: [
+            {
+              type: 'boolean'
+            },
+            {
+              type: 'object',
+              properties: {
+                grouping: {
+                  type: 'boolean'
+                },
+                allowCall: {
+                  type: 'boolean'
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-mixed-spaces-and-tabs',
+    meta: {
+      docs: {
+        description: 'disallow mixed spaces and tabs for indentation',
+        category: 'Stylistic Issues',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-mixed-spaces-and-tabs'
+      },
+      schema: [
+        {
+          'enum': [
+            'smart-tabs',
+            true,
+            false
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-multi-assign',
+    meta: {
+      docs: {
+        description: 'disallow use of chained assignment expressions',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-multi-assign'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-multi-spaces',
+    meta: {
+      docs: {
+        description: 'disallow multiple spaces',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-multi-spaces'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            exceptions: {
+              type: 'object',
+              patternProperties: {
+                '^([A-Z][a-z]*)+$': {
+                  type: 'boolean'
+                }
+              },
+              additionalProperties: false
+            },
+            ignoreEOLComments: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-multi-str',
+    meta: {
+      docs: {
+        description: 'disallow multiline strings',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-multi-str'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-multiple-empty-lines',
+    meta: {
+      docs: {
+        description: 'disallow multiple empty lines',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-multiple-empty-lines'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            max: {
+              type: 'integer',
+              minimum: 0
+            },
+            maxEOF: {
+              type: 'integer',
+              minimum: 0
+            },
+            maxBOF: {
+              type: 'integer',
+              minimum: 0
+            }
+          },
+          required: [
+            'max'
+          ],
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-native-reassign',
+    meta: {
+      docs: {
+        description: 'disallow assignments to native objects or read-only global variables',
+        category: 'Best Practices',
+        recommended: false,
+        replacedBy: [
+          'no-global-assign'
+        ],
+        url: 'https://eslint.org/docs/rules/no-native-reassign'
+      },
+      deprecated: true,
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            exceptions: {
+              type: 'array',
+              items: {
+                type: 'string'
+              },
+              uniqueItems: true
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-negated-condition',
+    meta: {
+      docs: {
+        description: 'disallow negated conditions',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-negated-condition'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-negated-in-lhs',
+    meta: {
+      docs: {
+        description: 'disallow negating the left operand in `in` expressions',
+        category: 'Possible Errors',
+        recommended: false,
+        replacedBy: [
+          'no-unsafe-negation'
+        ],
+        url: 'https://eslint.org/docs/rules/no-negated-in-lhs'
+      },
+      deprecated: true,
+      schema: []
+    }
+  },
+  {
+    id: 'no-nested-ternary',
+    meta: {
+      docs: {
+        description: 'disallow nested ternary expressions',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-nested-ternary'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-new-func',
+    meta: {
+      docs: {
+        description: 'disallow `new` operators with the `Function` object',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-new-func'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-new-object',
+    meta: {
+      docs: {
+        description: 'disallow `Object` constructors',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-new-object'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-new-require',
+    meta: {
+      docs: {
+        description: 'disallow `new` operators with calls to `require`',
+        category: 'Node.js and CommonJS',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-new-require'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-new-symbol',
+    meta: {
+      docs: {
+        description: 'disallow `new` operators with the `Symbol` object',
+        category: 'ECMAScript 6',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-new-symbol'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-new-wrappers',
+    meta: {
+      docs: {
+        description: 'disallow `new` operators with the `String`, `Number`, and `Boolean` objects',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-new-wrappers'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-new',
+    meta: {
+      docs: {
+        description: 'disallow `new` operators outside of assignments or comparisons',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-new'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-obj-calls',
+    meta: {
+      docs: {
+        description: 'disallow calling global object properties as functions',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-obj-calls'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-octal-escape',
+    meta: {
+      docs: {
+        description: 'disallow octal escape sequences in string literals',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-octal-escape'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-octal',
+    meta: {
+      docs: {
+        description: 'disallow octal literals',
+        category: 'Best Practices',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-octal'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-param-reassign',
+    meta: {
+      docs: {
+        description: 'disallow reassigning `function` parameters',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-param-reassign'
+      },
+      schema: [
+        {
+          oneOf: [
+            {
+              type: 'object',
+              properties: {
+                props: {
+                  'enum': [
+                    false
+                  ]
+                }
+              },
+              additionalProperties: false
+            },
+            {
+              type: 'object',
+              properties: {
+                props: {
+                  'enum': [
+                    true
+                  ]
+                },
+                ignorePropertyModificationsFor: {
+                  type: 'array',
+                  items: {
+                    type: 'string'
+                  },
+                  uniqueItems: true
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-path-concat',
+    meta: {
+      docs: {
+        description: 'disallow string concatenation with `__dirname` and `__filename`',
+        category: 'Node.js and CommonJS',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-path-concat'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-plusplus',
+    meta: {
+      docs: {
+        description: 'disallow the unary operators `++` and `--`',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-plusplus'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            allowForLoopAfterthoughts: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-process-env',
+    meta: {
+      docs: {
+        description: 'disallow the use of `process.env`',
+        category: 'Node.js and CommonJS',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-process-env'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-process-exit',
+    meta: {
+      docs: {
+        description: 'disallow the use of `process.exit()`',
+        category: 'Node.js and CommonJS',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-process-exit'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-proto',
+    meta: {
+      docs: {
+        description: 'disallow the use of the `__proto__` property',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-proto'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-prototype-builtins',
+    meta: {
+      docs: {
+        description: 'disallow calling some `Object.prototype` methods directly on objects',
+        category: 'Possible Errors',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-prototype-builtins'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-redeclare',
+    meta: {
+      docs: {
+        description: 'disallow variable redeclaration',
+        category: 'Best Practices',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-redeclare'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            builtinGlobals: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-regex-spaces',
+    meta: {
+      docs: {
+        description: 'disallow multiple spaces in regular expressions',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-regex-spaces'
+      },
+      schema: [],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'no-restricted-globals',
+    meta: {
+      docs: {
+        description: 'disallow specified global variables',
+        category: 'Variables',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-restricted-globals'
+      },
+      schema: {
+        type: 'array',
+        items: {
+          oneOf: [
+            {
+              type: 'string'
+            },
+            {
+              type: 'object',
+              properties: {
+                name: {
+                  type: 'string'
+                },
+                message: {
+                  type: 'string'
+                }
+              },
+              required: [
+                'name'
+              ],
+              additionalProperties: false
+            }
+          ]
+        },
+        uniqueItems: true,
+        minItems: 0
+      }
+    }
+  },
+  {
+    id: 'no-restricted-imports',
+    meta: {
+      docs: {
+        description: 'disallow specified modules when loaded by `import`',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-restricted-imports'
+      },
+      schema: {
+        anyOf: [
+          {
+            type: 'array',
+            items: {
+              anyOf: [
+                {
+                  type: 'string'
+                },
+                {
+                  type: 'object',
+                  properties: {
+                    name: {
+                      type: 'string'
+                    },
+                    message: {
+                      type: 'string',
+                      minLength: 1
+                    },
+                    importNames: {
+                      type: 'array',
+                      items: {
+                        type: 'string'
+                      }
+                    }
+                  },
+                  additionalProperties: false,
+                  required: [
+                    'name'
+                  ]
+                }
+              ]
+            },
+            uniqueItems: true
+          },
+          {
+            type: 'array',
+            items: {
+              type: 'object',
+              properties: {
+                paths: {
+                  type: 'array',
+                  items: {
+                    anyOf: [
+                      {
+                        type: 'string'
+                      },
+                      {
+                        type: 'object',
+                        properties: {
+                          name: {
+                            type: 'string'
+                          },
+                          message: {
+                            type: 'string',
+                            minLength: 1
+                          },
+                          importNames: {
+                            type: 'array',
+                            items: {
+                              type: 'string'
+                            }
+                          }
+                        },
+                        additionalProperties: false,
+                        required: [
+                          'name'
+                        ]
+                      }
+                    ]
+                  },
+                  uniqueItems: true
+                },
+                patterns: {
+                  type: 'array',
+                  items: {
+                    type: 'string'
+                  },
+                  uniqueItems: true
+                }
+              },
+              additionalProperties: false
+            },
+            additionalItems: false
+          }
+        ]
+      }
+    }
+  },
+  {
+    id: 'no-restricted-modules',
+    meta: {
+      docs: {
+        description: 'disallow specified modules when loaded by `require`',
+        category: 'Node.js and CommonJS',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-restricted-modules'
+      },
+      schema: {
+        anyOf: [
+          {
+            type: 'array',
+            items: {
+              anyOf: [
+                {
+                  type: 'string'
+                },
+                {
+                  type: 'object',
+                  properties: {
+                    name: {
+                      type: 'string'
+                    },
+                    message: {
+                      type: 'string',
+                      minLength: 1
+                    }
+                  },
+                  additionalProperties: false,
+                  required: [
+                    'name'
+                  ]
+                }
+              ]
+            },
+            uniqueItems: true
+          },
+          {
+            type: 'array',
+            items: {
+              type: 'object',
+              properties: {
+                paths: {
+                  type: 'array',
+                  items: {
+                    anyOf: [
+                      {
+                        type: 'string'
+                      },
+                      {
+                        type: 'object',
+                        properties: {
+                          name: {
+                            type: 'string'
+                          },
+                          message: {
+                            type: 'string',
+                            minLength: 1
+                          }
+                        },
+                        additionalProperties: false,
+                        required: [
+                          'name'
+                        ]
+                      }
+                    ]
+                  },
+                  uniqueItems: true
+                },
+                patterns: {
+                  type: 'array',
+                  items: {
+                    type: 'string'
+                  },
+                  uniqueItems: true
+                }
+              },
+              additionalProperties: false
+            },
+            additionalItems: false
+          }
+        ]
+      }
+    }
+  },
+  {
+    id: 'no-restricted-properties',
+    meta: {
+      docs: {
+        description: 'disallow certain properties on certain objects',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-restricted-properties'
+      },
+      schema: {
+        type: 'array',
+        items: {
+          anyOf: [
+            {
+              type: 'object',
+              properties: {
+                object: {
+                  type: 'string'
+                },
+                property: {
+                  type: 'string'
+                },
+                message: {
+                  type: 'string'
+                }
+              },
+              additionalProperties: false,
+              required: [
+                'object'
+              ]
+            },
+            {
+              type: 'object',
+              properties: {
+                object: {
+                  type: 'string'
+                },
+                property: {
+                  type: 'string'
+                },
+                message: {
+                  type: 'string'
+                }
+              },
+              additionalProperties: false,
+              required: [
+                'property'
+              ]
+            }
+          ]
+        },
+        uniqueItems: true
+      }
+    }
+  },
+  {
+    id: 'no-restricted-syntax',
+    meta: {
+      docs: {
+        description: 'disallow specified syntax',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-restricted-syntax'
+      },
+      schema: {
+        type: 'array',
+        items: [
+          {
+            oneOf: [
+              {
+                type: 'string'
+              },
+              {
+                type: 'object',
+                properties: {
+                  selector: {
+                    type: 'string'
+                  },
+                  message: {
+                    type: 'string'
+                  }
+                },
+                required: [
+                  'selector'
+                ],
+                additionalProperties: false
+              }
+            ]
+          }
+        ],
+        uniqueItems: true,
+        minItems: 0
+      }
+    }
+  },
+  {
+    id: 'no-return-assign',
+    meta: {
+      docs: {
+        description: 'disallow assignment operators in `return` statements',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-return-assign'
+      },
+      schema: [
+        {
+          'enum': [
+            'except-parens',
+            'always'
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-return-await',
+    meta: {
+      docs: {
+        description: 'disallow unnecessary `return await`',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-return-await'
+      },
+      fixable: null,
+      schema: []
+    }
+  },
+  {
+    id: 'no-script-url',
+    meta: {
+      docs: {
+        description: 'disallow `javascript:` urls',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-script-url'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-self-assign',
+    meta: {
+      docs: {
+        description: 'disallow assignments where both sides are exactly the same',
+        category: 'Best Practices',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-self-assign'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            props: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-self-compare',
+    meta: {
+      docs: {
+        description: 'disallow comparisons where both sides are exactly the same',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-self-compare'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-sequences',
+    meta: {
+      docs: {
+        description: 'disallow comma operators',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-sequences'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-shadow-restricted-names',
+    meta: {
+      docs: {
+        description: 'disallow identifiers from shadowing restricted names',
+        category: 'Variables',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-shadow-restricted-names'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-shadow',
+    meta: {
+      docs: {
+        description: 'disallow variable declarations from shadowing variables declared in the outer scope',
+        category: 'Variables',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-shadow'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            builtinGlobals: {
+              type: 'boolean'
+            },
+            hoist: {
+              'enum': [
+                'all',
+                'functions',
+                'never'
+              ]
+            },
+            allow: {
+              type: 'array',
+              items: {
+                type: 'string'
+              }
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-spaced-func',
+    meta: {
+      docs: {
+        description: 'disallow spacing between function identifiers and their applications (deprecated)',
+        category: 'Stylistic Issues',
+        recommended: false,
+        replacedBy: [
+          'func-call-spacing'
+        ],
+        url: 'https://eslint.org/docs/rules/no-spaced-func'
+      },
+      deprecated: true,
+      fixable: 'whitespace',
+      schema: []
+    }
+  },
+  {
+    id: 'no-sparse-arrays',
+    meta: {
+      docs: {
+        description: 'disallow sparse arrays',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-sparse-arrays'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-sync',
+    meta: {
+      docs: {
+        description: 'disallow synchronous methods',
+        category: 'Node.js and CommonJS',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-sync'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            allowAtRootLevel: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-tabs',
+    meta: {
+      docs: {
+        description: 'disallow all tabs',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-tabs'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-template-curly-in-string',
+    meta: {
+      docs: {
+        description: 'disallow template literal placeholder syntax in regular strings',
+        category: 'Possible Errors',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-template-curly-in-string'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-ternary',
+    meta: {
+      docs: {
+        description: 'disallow ternary operators',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-ternary'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-this-before-super',
+    meta: {
+      docs: {
+        description: 'disallow `this`/`super` before calling `super()` in constructors',
+        category: 'ECMAScript 6',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-this-before-super'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-throw-literal',
+    meta: {
+      docs: {
+        description: 'disallow throwing literals as exceptions',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-throw-literal'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-trailing-spaces',
+    meta: {
+      docs: {
+        description: 'disallow trailing whitespace at the end of lines',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-trailing-spaces'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            skipBlankLines: {
+              type: 'boolean'
+            },
+            ignoreComments: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-undef-init',
+    meta: {
+      docs: {
+        description: 'disallow initializing variables to `undefined`',
+        category: 'Variables',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-undef-init'
+      },
+      schema: [],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'no-undef',
+    meta: {
+      docs: {
+        description: 'disallow the use of undeclared variables unless mentioned in `/*global */` comments',
+        category: 'Variables',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-undef'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            'typeof': {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-undefined',
+    meta: {
+      docs: {
+        description: 'disallow the use of `undefined` as an identifier',
+        category: 'Variables',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-undefined'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-underscore-dangle',
+    meta: {
+      docs: {
+        description: 'disallow dangling underscores in identifiers',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-underscore-dangle'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            allow: {
+              type: 'array',
+              items: {
+                type: 'string'
+              }
+            },
+            allowAfterThis: {
+              type: 'boolean'
+            },
+            allowAfterSuper: {
+              type: 'boolean'
+            },
+            enforceInMethodNames: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-unexpected-multiline',
+    meta: {
+      docs: {
+        description: 'disallow confusing multiline expressions',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-unexpected-multiline'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-unmodified-loop-condition',
+    meta: {
+      docs: {
+        description: 'disallow unmodified loop conditions',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-unmodified-loop-condition'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-unneeded-ternary',
+    meta: {
+      docs: {
+        description: 'disallow ternary operators when simpler alternatives exist',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-unneeded-ternary'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            defaultAssignment: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'no-unreachable',
+    meta: {
+      docs: {
+        description: 'disallow unreachable code after `return`, `throw`, `continue`, and `break` statements',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-unreachable'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-unsafe-finally',
+    meta: {
+      docs: {
+        description: 'disallow control flow statements in `finally` blocks',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-unsafe-finally'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-unsafe-negation',
+    meta: {
+      docs: {
+        description: 'disallow negating the left operand of relational operators',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-unsafe-negation'
+      },
+      schema: [],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'no-unused-expressions',
+    meta: {
+      docs: {
+        description: 'disallow unused expressions',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-unused-expressions'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            allowShortCircuit: {
+              type: 'boolean'
+            },
+            allowTernary: {
+              type: 'boolean'
+            },
+            allowTaggedTemplates: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-unused-labels',
+    meta: {
+      docs: {
+        description: 'disallow unused labels',
+        category: 'Best Practices',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-unused-labels'
+      },
+      schema: [],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'no-unused-vars',
+    meta: {
+      docs: {
+        description: 'disallow unused variables',
+        category: 'Variables',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-unused-vars'
+      },
+      schema: [
+        {
+          oneOf: [
+            {
+              'enum': [
+                'all',
+                'local'
+              ]
+            },
+            {
+              type: 'object',
+              properties: {
+                vars: {
+                  'enum': [
+                    'all',
+                    'local'
+                  ]
+                },
+                varsIgnorePattern: {
+                  type: 'string'
+                },
+                args: {
+                  'enum': [
+                    'all',
+                    'after-used',
+                    'none'
+                  ]
+                },
+                ignoreRestSiblings: {
+                  type: 'boolean'
+                },
+                argsIgnorePattern: {
+                  type: 'string'
+                },
+                caughtErrors: {
+                  'enum': [
+                    'all',
+                    'none'
+                  ]
+                },
+                caughtErrorsIgnorePattern: {
+                  type: 'string'
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-use-before-define',
+    meta: {
+      docs: {
+        description: 'disallow the use of variables before they are defined',
+        category: 'Variables',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-use-before-define'
+      },
+      schema: [
+        {
+          oneOf: [
+            {
+              'enum': [
+                'nofunc'
+              ]
+            },
+            {
+              type: 'object',
+              properties: {
+                functions: {
+                  type: 'boolean'
+                },
+                classes: {
+                  type: 'boolean'
+                },
+                variables: {
+                  type: 'boolean'
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-useless-call',
+    meta: {
+      docs: {
+        description: 'disallow unnecessary calls to `.call()` and `.apply()`',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-useless-call'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-useless-computed-key',
+    meta: {
+      docs: {
+        description: 'disallow unnecessary computed property keys in object literals',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-useless-computed-key'
+      },
+      schema: [],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'no-useless-concat',
+    meta: {
+      docs: {
+        description: 'disallow unnecessary concatenation of literals or template literals',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-useless-concat'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-useless-constructor',
+    meta: {
+      docs: {
+        description: 'disallow unnecessary constructors',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-useless-constructor'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-useless-escape',
+    meta: {
+      docs: {
+        description: 'disallow unnecessary escape characters',
+        category: 'Best Practices',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/no-useless-escape'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-useless-rename',
+    meta: {
+      docs: {
+        description: 'disallow renaming import, export, and destructured assignments to the same name',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-useless-rename'
+      },
+      fixable: 'code',
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            ignoreDestructuring: {
+              type: 'boolean'
+            },
+            ignoreImport: {
+              type: 'boolean'
+            },
+            ignoreExport: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-useless-return',
+    meta: {
+      docs: {
+        description: 'disallow redundant return statements',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-useless-return'
+      },
+      fixable: 'code',
+      schema: []
+    }
+  },
+  {
+    id: 'no-var',
+    meta: {
+      docs: {
+        description: 'require `let` or `const` instead of `var`',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-var'
+      },
+      schema: [],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'no-void',
+    meta: {
+      docs: {
+        description: 'disallow `void` operators',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-void'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'no-warning-comments',
+    meta: {
+      docs: {
+        description: 'disallow specified warning terms in comments',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-warning-comments'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            terms: {
+              type: 'array',
+              items: {
+                type: 'string'
+              }
+            },
+            location: {
+              'enum': [
+                'start',
+                'anywhere'
+              ]
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'no-whitespace-before-property',
+    meta: {
+      docs: {
+        description: 'disallow whitespace before properties',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-whitespace-before-property'
+      },
+      fixable: 'whitespace',
+      schema: []
+    }
+  },
+  {
+    id: 'no-with',
+    meta: {
+      docs: {
+        description: 'disallow `with` statements',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-with'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'nonblock-statement-body-position',
+    meta: {
+      docs: {
+        description: 'enforce the location of single-line statements',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/nonblock-statement-body-position'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          'enum': [
+            'beside',
+            'below',
+            'any'
+          ]
+        },
+        {
+          properties: {
+            overrides: {
+              properties: {
+                'if': {
+                  'enum': [
+                    'beside',
+                    'below',
+                    'any'
+                  ]
+                },
+                'else': {
+                  'enum': [
+                    'beside',
+                    'below',
+                    'any'
+                  ]
+                },
+                'while': {
+                  'enum': [
+                    'beside',
+                    'below',
+                    'any'
+                  ]
+                },
+                'do': {
+                  'enum': [
+                    'beside',
+                    'below',
+                    'any'
+                  ]
+                },
+                'for': {
+                  'enum': [
+                    'beside',
+                    'below',
+                    'any'
+                  ]
+                }
+              },
+              additionalProperties: false
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'object-curly-newline',
+    meta: {
+      docs: {
+        description: 'enforce consistent line breaks inside braces',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/object-curly-newline'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          oneOf: [
+            {
+              oneOf: [
+                {
+                  'enum': [
+                    'always',
+                    'never'
+                  ]
+                },
+                {
+                  type: 'object',
+                  properties: {
+                    multiline: {
+                      type: 'boolean'
+                    },
+                    minProperties: {
+                      type: 'integer',
+                      minimum: 0
+                    },
+                    consistent: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false,
+                  minProperties: 1
+                }
+              ]
+            },
+            {
+              type: 'object',
+              properties: {
+                ObjectExpression: {
+                  oneOf: [
+                    {
+                      'enum': [
+                        'always',
+                        'never'
+                      ]
+                    },
+                    {
+                      type: 'object',
+                      properties: {
+                        multiline: {
+                          type: 'boolean'
+                        },
+                        minProperties: {
+                          type: 'integer',
+                          minimum: 0
+                        },
+                        consistent: {
+                          type: 'boolean'
+                        }
+                      },
+                      additionalProperties: false,
+                      minProperties: 1
+                    }
+                  ]
+                },
+                ObjectPattern: {
+                  oneOf: [
+                    {
+                      'enum': [
+                        'always',
+                        'never'
+                      ]
+                    },
+                    {
+                      type: 'object',
+                      properties: {
+                        multiline: {
+                          type: 'boolean'
+                        },
+                        minProperties: {
+                          type: 'integer',
+                          minimum: 0
+                        },
+                        consistent: {
+                          type: 'boolean'
+                        }
+                      },
+                      additionalProperties: false,
+                      minProperties: 1
+                    }
+                  ]
+                }
+              },
+              additionalProperties: false,
+              minProperties: 1
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'object-curly-spacing',
+    meta: {
+      docs: {
+        description: 'enforce consistent spacing inside braces',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/object-curly-spacing'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          'enum': [
+            'always',
+            'never'
+          ]
+        },
+        {
+          type: 'object',
+          properties: {
+            arraysInObjects: {
+              type: 'boolean'
+            },
+            objectsInObjects: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'object-property-newline',
+    meta: {
+      docs: {
+        description: 'enforce placing object properties on separate lines',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/object-property-newline'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            allowAllPropertiesOnSameLine: {
+              type: 'boolean'
+            },
+            allowMultiplePropertiesPerLine: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ],
+      fixable: 'whitespace'
+    }
+  },
+  {
+    id: 'object-shorthand',
+    meta: {
+      docs: {
+        description: 'require or disallow method and property shorthand syntax for object literals',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/object-shorthand'
+      },
+      fixable: 'code',
+      schema: {
+        anyOf: [
+          {
+            type: 'array',
+            items: [
+              {
+                'enum': [
+                  'always',
+                  'methods',
+                  'properties',
+                  'never',
+                  'consistent',
+                  'consistent-as-needed'
+                ]
+              }
+            ],
+            minItems: 0,
+            maxItems: 1
+          },
+          {
+            type: 'array',
+            items: [
+              {
+                'enum': [
+                  'always',
+                  'methods',
+                  'properties'
+                ]
+              },
+              {
+                type: 'object',
+                properties: {
+                  avoidQuotes: {
+                    type: 'boolean'
+                  }
+                },
+                additionalProperties: false
+              }
+            ],
+            minItems: 0,
+            maxItems: 2
+          },
+          {
+            type: 'array',
+            items: [
+              {
+                'enum': [
+                  'always',
+                  'methods'
+                ]
+              },
+              {
+                type: 'object',
+                properties: {
+                  ignoreConstructors: {
+                    type: 'boolean'
+                  },
+                  avoidQuotes: {
+                    type: 'boolean'
+                  },
+                  avoidExplicitReturnArrows: {
+                    type: 'boolean'
+                  }
+                },
+                additionalProperties: false
+              }
+            ],
+            minItems: 0,
+            maxItems: 2
+          }
+        ]
+      }
+    }
+  },
+  {
+    id: 'one-var-declaration-per-line',
+    meta: {
+      docs: {
+        description: 'require or disallow newlines around variable declarations',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/one-var-declaration-per-line'
+      },
+      schema: [
+        {
+          'enum': [
+            'always',
+            'initializations'
+          ]
+        }
+      ],
+      fixable: 'whitespace'
+    }
+  },
+  {
+    id: 'one-var',
+    meta: {
+      docs: {
+        description: 'enforce variables to be declared either together or separately in functions',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/one-var'
+      },
+      schema: [
+        {
+          oneOf: [
+            {
+              'enum': [
+                'always',
+                'never'
+              ]
+            },
+            {
+              type: 'object',
+              properties: {
+                separateRequires: {
+                  type: 'boolean'
+                },
+                'var': {
+                  'enum': [
+                    'always',
+                    'never'
+                  ]
+                },
+                let: {
+                  'enum': [
+                    'always',
+                    'never'
+                  ]
+                },
+                'const': {
+                  'enum': [
+                    'always',
+                    'never'
+                  ]
+                }
+              },
+              additionalProperties: false
+            },
+            {
+              type: 'object',
+              properties: {
+                initialized: {
+                  'enum': [
+                    'always',
+                    'never'
+                  ]
+                },
+                uninitialized: {
+                  'enum': [
+                    'always',
+                    'never'
+                  ]
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'operator-assignment',
+    meta: {
+      docs: {
+        description: 'require or disallow assignment operator shorthand where possible',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/operator-assignment'
+      },
+      schema: [
+        {
+          'enum': [
+            'always',
+            'never'
+          ]
+        }
+      ],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'operator-linebreak',
+    meta: {
+      docs: {
+        description: 'enforce consistent linebreak style for operators',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/operator-linebreak'
+      },
+      schema: [
+        {
+          'enum': [
+            'after',
+            'before',
+            'none',
+            null
+          ]
+        },
+        {
+          type: 'object',
+          properties: {
+            overrides: {
+              type: 'object',
+              properties: {
+                anyOf: {
+                  type: 'string',
+                  'enum': [
+                    'after',
+                    'before',
+                    'none',
+                    'ignore'
+                  ]
+                }
+              }
+            }
+          },
+          additionalProperties: false
+        }
+      ],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'padded-blocks',
+    meta: {
+      docs: {
+        description: 'require or disallow padding within blocks',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/padded-blocks'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          oneOf: [
+            {
+              'enum': [
+                'always',
+                'never'
+              ]
+            },
+            {
+              type: 'object',
+              properties: {
+                blocks: {
+                  'enum': [
+                    'always',
+                    'never'
+                  ]
+                },
+                switches: {
+                  'enum': [
+                    'always',
+                    'never'
+                  ]
+                },
+                classes: {
+                  'enum': [
+                    'always',
+                    'never'
+                  ]
+                }
+              },
+              additionalProperties: false,
+              minProperties: 1
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'padding-line-between-statements',
+    meta: {
+      docs: {
+        description: 'require or disallow padding lines between statements',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/padding-line-between-statements'
+      },
+      fixable: 'whitespace',
+      schema: {
+        definitions: {
+          paddingType: {
+            'enum': [
+              'any',
+              'never',
+              'always'
+            ]
+          },
+          statementType: {
+            anyOf: [
+              {
+                'enum': [
+                  '*',
+                  'block-like',
+                  'cjs-export',
+                  'cjs-import',
+                  'directive',
+                  'expression',
+                  'multiline-block-like',
+                  'block',
+                  'empty',
+                  'break',
+                  'case',
+                  'class',
+                  'const',
+                  'continue',
+                  'debugger',
+                  'default',
+                  'do',
+                  'export',
+                  'for',
+                  'function',
+                  'if',
+                  'import',
+                  'let',
+                  'return',
+                  'switch',
+                  'throw',
+                  'try',
+                  'var',
+                  'while',
+                  'with'
+                ]
+              },
+              {
+                type: 'array',
+                items: {
+                  'enum': [
+                    '*',
+                    'block-like',
+                    'cjs-export',
+                    'cjs-import',
+                    'directive',
+                    'expression',
+                    'multiline-block-like',
+                    'block',
+                    'empty',
+                    'break',
+                    'case',
+                    'class',
+                    'const',
+                    'continue',
+                    'debugger',
+                    'default',
+                    'do',
+                    'export',
+                    'for',
+                    'function',
+                    'if',
+                    'import',
+                    'let',
+                    'return',
+                    'switch',
+                    'throw',
+                    'try',
+                    'var',
+                    'while',
+                    'with'
+                  ]
+                },
+                minItems: 1,
+                uniqueItems: true,
+                additionalItems: false
+              }
+            ]
+          }
+        },
+        type: 'array',
+        items: {
+          type: 'object',
+          properties: {
+            blankLine: {
+              $ref: '#/definitions/paddingType'
+            },
+            prev: {
+              $ref: '#/definitions/statementType'
+            },
+            next: {
+              $ref: '#/definitions/statementType'
+            }
+          },
+          additionalProperties: false,
+          required: [
+            'blankLine',
+            'prev',
+            'next'
+          ]
+        },
+        additionalItems: false
+      }
+    }
+  },
+  {
+    id: 'prefer-arrow-callback',
+    meta: {
+      docs: {
+        description: 'require using arrow functions for callbacks',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/prefer-arrow-callback'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            allowNamedFunctions: {
+              type: 'boolean'
+            },
+            allowUnboundThis: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'prefer-const',
+    meta: {
+      docs: {
+        description: 'require `const` declarations for variables that are never reassigned after declared',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/prefer-const'
+      },
+      fixable: 'code',
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            destructuring: {
+              'enum': [
+                'any',
+                'all'
+              ]
+            },
+            ignoreReadBeforeAssign: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'prefer-destructuring',
+    meta: {
+      docs: {
+        description: 'require destructuring from arrays and/or objects',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/prefer-destructuring'
+      },
+      schema: [
+        {
+          oneOf: [
+            {
+              type: 'object',
+              properties: {
+                VariableDeclarator: {
+                  type: 'object',
+                  properties: {
+                    array: {
+                      type: 'boolean'
+                    },
+                    object: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                },
+                AssignmentExpression: {
+                  type: 'object',
+                  properties: {
+                    array: {
+                      type: 'boolean'
+                    },
+                    object: {
+                      type: 'boolean'
+                    }
+                  },
+                  additionalProperties: false
+                }
+              },
+              additionalProperties: false
+            },
+            {
+              type: 'object',
+              properties: {
+                array: {
+                  type: 'boolean'
+                },
+                object: {
+                  type: 'boolean'
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        },
+        {
+          type: 'object',
+          properties: {
+            enforceForRenamedProperties: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'prefer-numeric-literals',
+    meta: {
+      docs: {
+        description: 'disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/prefer-numeric-literals'
+      },
+      schema: [],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'prefer-promise-reject-errors',
+    meta: {
+      docs: {
+        description: 'require using Error objects as Promise rejection reasons',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/prefer-promise-reject-errors'
+      },
+      fixable: null,
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            allowEmptyReject: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'prefer-reflect',
+    meta: {
+      docs: {
+        description: 'require `Reflect` methods where applicable',
+        category: 'ECMAScript 6',
+        recommended: false,
+        replacedBy: [],
+        url: 'https://eslint.org/docs/rules/prefer-reflect'
+      },
+      deprecated: true,
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            exceptions: {
+              type: 'array',
+              items: {
+                'enum': [
+                  'apply',
+                  'call',
+                  'delete',
+                  'defineProperty',
+                  'getOwnPropertyDescriptor',
+                  'getPrototypeOf',
+                  'setPrototypeOf',
+                  'isExtensible',
+                  'getOwnPropertyNames',
+                  'preventExtensions'
+                ]
+              },
+              uniqueItems: true
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'prefer-rest-params',
+    meta: {
+      docs: {
+        description: 'require rest parameters instead of `arguments`',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/prefer-rest-params'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'prefer-spread',
+    meta: {
+      docs: {
+        description: 'require spread operators instead of `.apply()`',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/prefer-spread'
+      },
+      schema: [],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'prefer-template',
+    meta: {
+      docs: {
+        description: 'require template literals instead of string concatenation',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/prefer-template'
+      },
+      schema: [],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'quote-props',
+    meta: {
+      docs: {
+        description: 'require quotes around object literal property names',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/quote-props'
+      },
+      schema: {
+        anyOf: [
+          {
+            type: 'array',
+            items: [
+              {
+                'enum': [
+                  'always',
+                  'as-needed',
+                  'consistent',
+                  'consistent-as-needed'
+                ]
+              }
+            ],
+            minItems: 0,
+            maxItems: 1
+          },
+          {
+            type: 'array',
+            items: [
+              {
+                'enum': [
+                  'always',
+                  'as-needed',
+                  'consistent',
+                  'consistent-as-needed'
+                ]
+              },
+              {
+                type: 'object',
+                properties: {
+                  keywords: {
+                    type: 'boolean'
+                  },
+                  unnecessary: {
+                    type: 'boolean'
+                  },
+                  numbers: {
+                    type: 'boolean'
+                  }
+                },
+                additionalProperties: false
+              }
+            ],
+            minItems: 0,
+            maxItems: 2
+          }
+        ]
+      },
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'quotes',
+    meta: {
+      docs: {
+        description: 'enforce the consistent use of either backticks, double, or single quotes',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/quotes'
+      },
+      fixable: 'code',
+      schema: [
+        {
+          'enum': [
+            'single',
+            'double',
+            'backtick'
+          ]
+        },
+        {
+          anyOf: [
+            {
+              'enum': [
+                'avoid-escape'
+              ]
+            },
+            {
+              type: 'object',
+              properties: {
+                avoidEscape: {
+                  type: 'boolean'
+                },
+                allowTemplateLiterals: {
+                  type: 'boolean'
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'radix',
+    meta: {
+      docs: {
+        description: 'enforce the consistent use of the radix argument when using `parseInt()`',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/radix'
+      },
+      schema: [
+        {
+          'enum': [
+            'always',
+            'as-needed'
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'require-await',
+    meta: {
+      docs: {
+        description: 'disallow async functions which have no `await` expression',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/require-await'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'require-jsdoc',
+    meta: {
+      docs: {
+        description: 'require JSDoc comments',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/require-jsdoc'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            require: {
+              type: 'object',
+              properties: {
+                ClassDeclaration: {
+                  type: 'boolean'
+                },
+                MethodDefinition: {
+                  type: 'boolean'
+                },
+                FunctionDeclaration: {
+                  type: 'boolean'
+                },
+                ArrowFunctionExpression: {
+                  type: 'boolean'
+                },
+                FunctionExpression: {
+                  type: 'boolean'
+                }
+              },
+              additionalProperties: false
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'require-yield',
+    meta: {
+      docs: {
+        description: 'require generator functions to contain `yield`',
+        category: 'ECMAScript 6',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/require-yield'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'rest-spread-spacing',
+    meta: {
+      docs: {
+        description: 'enforce spacing between rest and spread operators and their expressions',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/rest-spread-spacing'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          'enum': [
+            'always',
+            'never'
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'semi-spacing',
+    meta: {
+      docs: {
+        description: 'enforce consistent spacing before and after semicolons',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/semi-spacing'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            before: {
+              type: 'boolean'
+            },
+            after: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'semi-style',
+    meta: {
+      docs: {
+        description: 'enforce location of semicolons',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/semi-style'
+      },
+      schema: [
+        {
+          'enum': [
+            'last',
+            'first'
+          ]
+        }
+      ],
+      fixable: 'whitespace'
+    }
+  },
+  {
+    id: 'semi',
+    meta: {
+      docs: {
+        description: 'require or disallow semicolons instead of ASI',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/semi'
+      },
+      fixable: 'code',
+      schema: {
+        anyOf: [
+          {
+            type: 'array',
+            items: [
+              {
+                'enum': [
+                  'never'
+                ]
+              },
+              {
+                type: 'object',
+                properties: {
+                  beforeStatementContinuationChars: {
+                    'enum': [
+                      'always',
+                      'any',
+                      'never'
+                    ]
+                  }
+                },
+                additionalProperties: false
+              }
+            ],
+            minItems: 0,
+            maxItems: 2
+          },
+          {
+            type: 'array',
+            items: [
+              {
+                'enum': [
+                  'always'
+                ]
+              },
+              {
+                type: 'object',
+                properties: {
+                  omitLastInOneLineBlock: {
+                    type: 'boolean'
+                  }
+                },
+                additionalProperties: false
+              }
+            ],
+            minItems: 0,
+            maxItems: 2
+          }
+        ]
+      }
+    }
+  },
+  {
+    id: 'sort-imports',
+    meta: {
+      docs: {
+        description: 'enforce sorted import declarations within modules',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/sort-imports'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            ignoreCase: {
+              type: 'boolean'
+            },
+            memberSyntaxSortOrder: {
+              type: 'array',
+              items: {
+                'enum': [
+                  'none',
+                  'all',
+                  'multiple',
+                  'single'
+                ]
+              },
+              uniqueItems: true,
+              minItems: 4,
+              maxItems: 4
+            },
+            ignoreMemberSort: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'sort-keys',
+    meta: {
+      docs: {
+        description: 'require object keys to be sorted',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/sort-keys'
+      },
+      schema: [
+        {
+          'enum': [
+            'asc',
+            'desc'
+          ]
+        },
+        {
+          type: 'object',
+          properties: {
+            caseSensitive: {
+              type: 'boolean'
+            },
+            natural: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'sort-vars',
+    meta: {
+      docs: {
+        description: 'require variables within the same declaration block to be sorted',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/sort-vars'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            ignoreCase: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'space-before-blocks',
+    meta: {
+      docs: {
+        description: 'enforce consistent spacing before blocks',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/space-before-blocks'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          oneOf: [
+            {
+              'enum': [
+                'always',
+                'never'
+              ]
+            },
+            {
+              type: 'object',
+              properties: {
+                keywords: {
+                  'enum': [
+                    'always',
+                    'never'
+                  ]
+                },
+                functions: {
+                  'enum': [
+                    'always',
+                    'never'
+                  ]
+                },
+                classes: {
+                  'enum': [
+                    'always',
+                    'never'
+                  ]
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'space-before-function-paren',
+    meta: {
+      docs: {
+        description: 'enforce consistent spacing before `function` definition opening parenthesis',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/space-before-function-paren'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          oneOf: [
+            {
+              'enum': [
+                'always',
+                'never'
+              ]
+            },
+            {
+              type: 'object',
+              properties: {
+                anonymous: {
+                  'enum': [
+                    'always',
+                    'never',
+                    'ignore'
+                  ]
+                },
+                named: {
+                  'enum': [
+                    'always',
+                    'never',
+                    'ignore'
+                  ]
+                },
+                asyncArrow: {
+                  'enum': [
+                    'always',
+                    'never',
+                    'ignore'
+                  ]
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'space-in-parens',
+    meta: {
+      docs: {
+        description: 'enforce consistent spacing inside parentheses',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/space-in-parens'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          'enum': [
+            'always',
+            'never'
+          ]
+        },
+        {
+          type: 'object',
+          properties: {
+            exceptions: {
+              type: 'array',
+              items: {
+                'enum': [
+                  '{}',
+                  '[]',
+                  '()',
+                  'empty'
+                ]
+              },
+              uniqueItems: true
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'space-infix-ops',
+    meta: {
+      docs: {
+        description: 'require spacing around infix operators',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/space-infix-ops'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            int32Hint: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'space-unary-ops',
+    meta: {
+      docs: {
+        description: 'enforce consistent spacing before or after unary operators',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/space-unary-ops'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            words: {
+              type: 'boolean'
+            },
+            nonwords: {
+              type: 'boolean'
+            },
+            overrides: {
+              type: 'object',
+              additionalProperties: {
+                type: 'boolean'
+              }
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'spaced-comment',
+    meta: {
+      docs: {
+        description: 'enforce consistent spacing after the `//` or `/*` in a comment',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/spaced-comment'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          'enum': [
+            'always',
+            'never'
+          ]
+        },
+        {
+          type: 'object',
+          properties: {
+            exceptions: {
+              type: 'array',
+              items: {
+                type: 'string'
+              }
+            },
+            markers: {
+              type: 'array',
+              items: {
+                type: 'string'
+              }
+            },
+            line: {
+              type: 'object',
+              properties: {
+                exceptions: {
+                  type: 'array',
+                  items: {
+                    type: 'string'
+                  }
+                },
+                markers: {
+                  type: 'array',
+                  items: {
+                    type: 'string'
+                  }
+                }
+              },
+              additionalProperties: false
+            },
+            block: {
+              type: 'object',
+              properties: {
+                exceptions: {
+                  type: 'array',
+                  items: {
+                    type: 'string'
+                  }
+                },
+                markers: {
+                  type: 'array',
+                  items: {
+                    type: 'string'
+                  }
+                },
+                balanced: {
+                  type: 'boolean'
+                }
+              },
+              additionalProperties: false
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'strict',
+    meta: {
+      docs: {
+        description: 'require or disallow strict mode directives',
+        category: 'Strict Mode',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/strict'
+      },
+      schema: [
+        {
+          'enum': [
+            'never',
+            'global',
+            'function',
+            'safe'
+          ]
+        }
+      ],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'switch-colon-spacing',
+    meta: {
+      docs: {
+        description: 'enforce spacing around colons of switch statements',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/switch-colon-spacing'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            before: {
+              type: 'boolean'
+            },
+            after: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ],
+      fixable: 'whitespace'
+    }
+  },
+  {
+    id: 'symbol-description',
+    meta: {
+      docs: {
+        description: 'require symbol descriptions',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/symbol-description'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'template-curly-spacing',
+    meta: {
+      docs: {
+        description: 'require or disallow spacing around embedded expressions of template strings',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/template-curly-spacing'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          'enum': [
+            'always',
+            'never'
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'template-tag-spacing',
+    meta: {
+      docs: {
+        description: 'require or disallow spacing between template tags and their literals',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/template-tag-spacing'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          'enum': [
+            'always',
+            'never'
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'unicode-bom',
+    meta: {
+      docs: {
+        description: 'require or disallow Unicode byte order mark (BOM)',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/unicode-bom'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          'enum': [
+            'always',
+            'never'
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'use-isnan',
+    meta: {
+      docs: {
+        description: 'require calls to `isNaN()` when checking for `NaN`',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/use-isnan'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'valid-jsdoc',
+    meta: {
+      docs: {
+        description: 'enforce valid JSDoc comments',
+        category: 'Possible Errors',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/valid-jsdoc'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            prefer: {
+              type: 'object',
+              additionalProperties: {
+                type: 'string'
+              }
+            },
+            preferType: {
+              type: 'object',
+              additionalProperties: {
+                type: 'string'
+              }
+            },
+            requireReturn: {
+              type: 'boolean'
+            },
+            requireParamDescription: {
+              type: 'boolean'
+            },
+            requireReturnDescription: {
+              type: 'boolean'
+            },
+            matchDescription: {
+              type: 'string'
+            },
+            requireReturnType: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'valid-typeof',
+    meta: {
+      docs: {
+        description: 'enforce comparing `typeof` expressions against valid strings',
+        category: 'Possible Errors',
+        recommended: true,
+        url: 'https://eslint.org/docs/rules/valid-typeof'
+      },
+      schema: [
+        {
+          type: 'object',
+          properties: {
+            requireStringLiterals: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'vars-on-top',
+    meta: {
+      docs: {
+        description: 'require `var` declarations be placed at the top of their containing scope',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/vars-on-top'
+      },
+      schema: []
+    }
+  },
+  {
+    id: 'wrap-iife',
+    meta: {
+      docs: {
+        description: 'require parentheses around immediate `function` invocations',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/wrap-iife'
+      },
+      schema: [
+        {
+          'enum': [
+            'outside',
+            'inside',
+            'any'
+          ]
+        },
+        {
+          type: 'object',
+          properties: {
+            functionPrototypeMethods: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'wrap-regex',
+    meta: {
+      docs: {
+        description: 'require parenthesis around regex literals',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/wrap-regex'
+      },
+      schema: [],
+      fixable: 'code'
+    }
+  },
+  {
+    id: 'yield-star-spacing',
+    meta: {
+      docs: {
+        description: 'require or disallow spacing around the `*` in `yield*` expressions',
+        category: 'ECMAScript 6',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/yield-star-spacing'
+      },
+      fixable: 'whitespace',
+      schema: [
+        {
+          oneOf: [
+            {
+              'enum': [
+                'before',
+                'after',
+                'both',
+                'neither'
+              ]
+            },
+            {
+              type: 'object',
+              properties: {
+                before: {
+                  type: 'boolean'
+                },
+                after: {
+                  type: 'boolean'
+                }
+              },
+              additionalProperties: false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: 'yoda',
+    meta: {
+      docs: {
+        description: 'require or disallow "Yoda" conditions',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/yoda'
+      },
+      schema: [
+        {
+          'enum': [
+            'always',
+            'never'
+          ]
+        },
+        {
+          type: 'object',
+          properties: {
+            exceptRange: {
+              type: 'boolean'
+            },
+            onlyEquality: {
+              type: 'boolean'
+            }
+          },
+          additionalProperties: false
+        }
+      ],
+      fixable: 'code'
+    }
+  }
+];
