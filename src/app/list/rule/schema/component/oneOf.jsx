@@ -2,9 +2,13 @@ import Field from './field';
 
 export default ({ propertyName, obj }) => (
   <div>
-    <div>{propertyName} - One of</div>
-    <ul>
-      {obj.oneOf.map((option, index) => <Field propertyName="" obj={option} key={index}/>)}
-    </ul>
+    <div>{propertyName}</div>
+    <div className="c-radio-group">
+      {obj.oneOf.map((option, index) =>
+        <div className="c-radio-option" key={index}>
+          <Field propertyName="" obj={option}/>
+        </div>
+      )}
+    </div>
   </div>
 );

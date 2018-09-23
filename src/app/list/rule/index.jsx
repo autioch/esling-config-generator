@@ -6,6 +6,11 @@ import { DISABLED_RULES, CHECKED_RULES } from './whitelists';
 const RadioGroup = Radio.Group;
 
 export default class Rule extends Component {
+  componentDidCatch(error, info) {
+    console.log('RULE ERROR', this.props.rule.id);
+    console.error(error);
+    console.error(info);
+  }
   render() {
     const {
       id,
@@ -33,7 +38,7 @@ export default class Rule extends Component {
         </div>
         { DISABLED_RULES[id] ? <div>DISABLED</div> : <Schema schema={schema} input=""/> }
         {CHECKED_RULES[id] || schema.length === 0 ? '' : <pre style={{
-          'font-size': '10px'
+          fontSize: '10px'
         }}>{JSON.stringify(schema, null, '  ')}</pre>}
       </div>
     );

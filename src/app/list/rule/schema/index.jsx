@@ -34,7 +34,7 @@ export default class Schema extends React.Component {
   }
   render() {
     return (
-      <div class="rule__schema-list">
+      <div className="rule__schema-list">
         {this.preparedSchema
           .map((schema, index) =>
             <div className="schema__option" key={index}>
