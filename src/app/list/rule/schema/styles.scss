@@ -1,3 +1,47 @@
 .unkown-schema {
   background: #daa;
 }
+
+.schema__option {
+  padding: .5em;
+
+  &:nth-child(2n+1) {
+    background: #f5f5f5;
+  }
+}
+
+.field-array__option {
+
+  &:nth-child(2n+1) {
+    background: #f5f5f5;
+  }
+}
+
+.field__obj {
+
+  > .ant-radio-group {
+    display: inline-flex !important;
+    flex-direction: row !important;
+  }
+}
+
+.field__object-properties {
+  margin: 0;
+  padding: 0;
+
+  > li {
+    list-style-type: none;
+  }
+}
+
+.field__array--single {
+  display: flex;
+}
+
+.field__array-name--single {
+  margin-right: .5em;
+}
+
+.rule__schema-list {
+  flex-grow: 1;
+}

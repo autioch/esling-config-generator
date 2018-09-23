@@ -23,7 +23,11 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        getter: 'Getter is not present.',
+        setter: 'Setter is not present.'
+      }
     }
   },
   {
@@ -64,7 +68,13 @@ module.exports = [
             }
           ]
         }
-      ]
+      ],
+      messages: {
+        unexpectedOpeningLinebreak: "There should be no linebreak after '['.",
+        unexpectedClosingLinebreak: "There should be no linebreak before ']'.",
+        missingOpeningLinebreak: "A linebreak is required after '['.",
+        missingClosingLinebreak: "A linebreak is required before ']'."
+      }
     }
   },
   {
@@ -99,7 +109,13 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        unexpectedSpaceAfter: "There should be no space after '{{tokenValue}}'.",
+        unexpectedSpaceBefore: "There should be no space before '{{tokenValue}}'.",
+        missingSpaceAfter: "A space is required after '{{tokenValue}}'.",
+        missingSpaceBefore: "A space is required before '{{tokenValue}}'."
+      }
     }
   },
   {
@@ -121,7 +137,12 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        expectedAtEnd: 'Expected to return a value at the end of {{name}}.',
+        expectedInside: 'Expected to return a value in {{name}}.',
+        expectedReturnValue: '{{name}} expected a return value.'
+      }
     }
   },
   {
@@ -140,7 +161,8 @@ module.exports = [
             {
               'enum': [
                 'always',
-                'never'
+                'never',
+                'consistent'
               ]
             },
             {
@@ -161,7 +183,11 @@ module.exports = [
             }
           ]
         }
-      ]
+      ],
+      messages: {
+        unexpectedLineBreak: 'There should be no linebreak here.',
+        missingLineBreak: 'There should be a linebreak after this element.'
+      }
     }
   },
   {
@@ -211,7 +237,14 @@ module.exports = [
           }
         ]
       },
-      fixable: 'code'
+      fixable: 'code',
+      messages: {
+        unexpectedOtherBlock: 'Unexpected block statement surrounding arrow body.',
+        unexpectedEmptyBlock: 'Unexpected block statement surrounding arrow body; put a value of `undefined` immediately after the `=>`.',
+        unexpectedObjectBlock: 'Unexpected block statement surrounding arrow body; parenthesize the returned value and move it immediately after the `=>`.',
+        unexpectedSingleBlock: 'Unexpected block statement surrounding arrow body; move the returned value immediately after the `=>`.',
+        expectedBlock: 'Expected block statement surrounding arrow body.'
+      }
     }
   },
   {
@@ -240,7 +273,13 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        unexpectedParens: 'Unexpected parentheses around single function argument.',
+        expectedParens: 'Expected parentheses around arrow function argument.',
+        unexpectedParensInline: 'Unexpected parentheses around single function argument having a body with no curly braces.',
+        expectedParensBlock: 'Expected parentheses around arrow function argument having a body with curly braces.'
+      }
     }
   },
   {
@@ -266,7 +305,13 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        expectedBefore: 'Missing space before =>.',
+        unexpectedBefore: 'Unexpected space before =>.',
+        expectedAfter: 'Missing space after =>.',
+        unexpectedAfter: 'Unexpected space after =>.'
+      }
     }
   },
   {
@@ -278,7 +323,10 @@ module.exports = [
         recommended: false,
         url: 'https://eslint.org/docs/rules/block-scoped-var'
       },
-      schema: []
+      schema: [],
+      messages: {
+        outOfScope: "'{{name}}' used outside of binding context."
+      }
     }
   },
   {
@@ -298,7 +346,11 @@ module.exports = [
             'never'
           ]
         }
-      ]
+      ],
+      messages: {
+        missing: "Requires a space {{location}} '{{token}}'",
+        extra: "Unexpected space(s) {{location}} '{{token}}'"
+      }
     }
   },
   {
@@ -328,7 +380,15 @@ module.exports = [
           additionalProperties: false
         }
       ],
-      fixable: 'whitespace'
+      fixable: 'whitespace',
+      messages: {
+        nextLineOpen: 'Opening curly brace does not appear on the same line as controlling statement.',
+        sameLineOpen: 'Opening curly brace appears on the same line as controlling statement.',
+        blockSameLine: 'Statement inside of curly braces should be on next line.',
+        nextLineClose: 'Closing curly brace does not appear on the same line as the subsequent block.',
+        singleLineClose: 'Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.',
+        sameLineClose: 'Closing curly brace appears on the same line as the subsequent block.'
+      }
     }
   },
   {
@@ -347,7 +407,10 @@ module.exports = [
             type: 'string'
           }
         }
-      ]
+      ],
+      messages: {
+        missingReturn: 'Expected return with your callback function.'
+      }
     }
   },
   {
@@ -363,6 +426,9 @@ module.exports = [
         {
           type: 'object',
           properties: {
+            ignoreDestructuring: {
+              type: 'boolean'
+            },
             properties: {
               'enum': [
                 'always',
@@ -372,7 +438,10 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        notCamelCase: "Identifier '{{name}}' is not in camel case."
+      }
     }
   },
   {
@@ -447,7 +516,11 @@ module.exports = [
             }
           ]
         }
-      ]
+      ],
+      messages: {
+        unexpectedLowercaseComment: 'Comments should not begin with a lowercase character',
+        unexpectedUppercaseComment: 'Comments should not begin with an uppercase character'
+      }
     }
   },
   {
@@ -472,7 +545,10 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        missingThis: "Expected 'this' to be used by class method '{{name}}'."
+      }
     }
   },
   {
@@ -536,6 +612,10 @@ module.exports = [
             ]
           }
         ]
+      },
+      messages: {
+        unexpected: 'Unexpected trailing comma.',
+        missing: 'Missing trailing comma.'
       }
     }
   },
@@ -562,7 +642,11 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        missing: "A space is required {{loc}} ','.",
+        unexpected: "There should be no space {{loc}} ','."
+      }
     }
   },
   {
@@ -594,7 +678,12 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        unexpectedLineBeforeAndAfterComma: "Bad line breaking before and after ','.",
+        expectedCommaFirst: "',' should be placed first.",
+        expectedCommaLast: "',' should be placed last."
+      }
     }
   },
   {
@@ -629,7 +718,10 @@ module.exports = [
             }
           ]
         }
-      ]
+      ],
+      messages: {
+        complex: '{{name}} has a complexity of {{complexity}}.'
+      }
     }
   },
   {
@@ -649,7 +741,13 @@ module.exports = [
             'never'
           ]
         }
-      ]
+      ],
+      messages: {
+        unexpectedSpaceBefore: "There should be no space before '{{tokenValue}}'.",
+        unexpectedSpaceAfter: "There should be no space after '{{tokenValue}}'.",
+        missingSpaceBefore: "A space is required before '{{tokenValue}}'.",
+        missingSpaceAfter: "A space is required after '{{tokenValue}}'."
+      }
     }
   },
   {
@@ -671,7 +769,12 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        missingReturn: 'Expected to return a value at the end of {{name}}.',
+        missingReturnValue: '{{name}} expected a return value.',
+        unexpectedReturnValue: '{{name}} expected no return value.'
+      }
     }
   },
   {
@@ -690,6 +793,10 @@ module.exports = [
           minLength: 1
         },
         uniqueItems: true
+      },
+      messages: {
+        aliasNotAssignedToThis: "Designated alias '{{name}}' is not assigned to 'this'.",
+        unexpectedAlias: "Unexpected alias '{{name}}' for 'this'."
       }
     }
   },
@@ -702,7 +809,14 @@ module.exports = [
         recommended: true,
         url: 'https://eslint.org/docs/rules/constructor-super'
       },
-      schema: []
+      schema: [],
+      messages: {
+        missingSome: "Lacked a call of 'super()' in some code paths.",
+        missingAll: "Expected to call 'super()'.",
+        duplicate: "Unexpected duplicate 'super()'.",
+        badSuper: "Unexpected 'super()' because 'super' is not a constructor.",
+        unexpected: "Unexpected 'super()'."
+      }
     }
   },
   {
@@ -749,7 +863,13 @@ module.exports = [
           }
         ]
       },
-      fixable: 'code'
+      fixable: 'code',
+      messages: {
+        missingCurlyAfter: "Expected { after '{{name}}'.",
+        missingCurlyAfterCondition: "Expected { after '{{name}}' condition.",
+        unexpectedCurlyAfter: "Unnecessary { after '{{name}}'.",
+        unexpectedCurlyAfterCondition: "Unnecessary { after '{{name}}' condition."
+      }
     }
   },
   {
@@ -771,7 +891,10 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        missingDefaultCase: 'Expected a default case.'
+      }
     }
   },
   {
@@ -791,7 +914,11 @@ module.exports = [
           ]
         }
       ],
-      fixable: 'code'
+      fixable: 'code',
+      messages: {
+        expectedDotAfterObject: 'Expected dot to be on same line as object.',
+        expectedDotBeforeProperty: 'Expected dot to be on same line as property.'
+      }
     }
   },
   {
@@ -817,7 +944,11 @@ module.exports = [
           additionalProperties: false
         }
       ],
-      fixable: 'code'
+      fixable: 'code',
+      messages: {
+        useDot: '[{{key}}] is better written in dot notation.',
+        useBrackets: '.{{key}} is a syntax error.'
+      }
     }
   },
   {
@@ -839,7 +970,11 @@ module.exports = [
             'windows'
           ]
         }
-      ]
+      ],
+      messages: {
+        missing: 'Newline required at end of file but not found.',
+        unexpected: 'Newline not allowed at end of file.'
+      }
     }
   },
   {
@@ -891,7 +1026,10 @@ module.exports = [
           }
         ]
       },
-      fixable: 'code'
+      fixable: 'code',
+      messages: {
+        unexpected: "Expected '{{expectedOperator}}' and instead saw '{{actualOperator}}'."
+      }
     }
   },
   {
@@ -900,11 +1038,14 @@ module.exports = [
       docs: {
         description: 'enforce "for" loop update clause moving the counter in the right direction.',
         category: 'Possible Errors',
-        recommended: false,
+        recommended: true,
         url: 'https://eslint.org/docs/rules/for-direction'
       },
       fixable: null,
-      schema: []
+      schema: [],
+      messages: {
+        incorrectDirection: 'The update clause in this loop moves the variable in the wrong direction.'
+      }
     }
   },
   {
@@ -953,6 +1094,10 @@ module.exports = [
             maxItems: 2
           }
         ]
+      },
+      messages: {
+        unexpected: 'Unexpected newline between function name and paren.',
+        missing: 'Missing space between function name and paren.'
       }
     }
   },
@@ -980,6 +1125,9 @@ module.exports = [
               {
                 type: 'object',
                 properties: {
+                  considerPropertyDescriptor: {
+                    type: 'boolean'
+                  },
                   includeCommonJSModuleExports: {
                     type: 'boolean'
                   }
@@ -995,6 +1143,9 @@ module.exports = [
               {
                 type: 'object',
                 properties: {
+                  considerPropertyDescriptor: {
+                    type: 'boolean'
+                  },
                   includeCommonJSModuleExports: {
                     type: 'boolean'
                   }
@@ -1004,6 +1155,12 @@ module.exports = [
             ]
           }
         ]
+      },
+      messages: {
+        matchProperty: 'Function name `{{funcName}}` should match property name `{{name}}`',
+        matchVariable: 'Function name `{{funcName}}` should match variable name `{{name}}`',
+        notMatchProperty: 'Function name `{{funcName}}` should not match property name `{{name}}`',
+        notMatchVariable: 'Function name `{{funcName}}` should not match variable name `{{name}}`'
       }
     }
   },
@@ -1016,15 +1173,35 @@ module.exports = [
         recommended: false,
         url: 'https://eslint.org/docs/rules/func-names'
       },
-      schema: [
-        {
-          'enum': [
-            'always',
-            'as-needed',
-            'never'
-          ]
-        }
-      ]
+      schema: {
+        definitions: {
+          value: {
+            'enum': [
+              'always',
+              'as-needed',
+              'never'
+            ]
+          }
+        },
+        items: [
+          {
+            $ref: '#/definitions/value'
+          },
+          {
+            type: 'object',
+            properties: {
+              generators: {
+                $ref: '#/definitions/value'
+              }
+            },
+            additionalProperties: false
+          }
+        ]
+      },
+      messages: {
+        unnamed: 'Unexpected unnamed {{name}}.',
+        named: 'Unexpected named {{name}}.'
+      }
     }
   },
   {
@@ -1052,7 +1229,11 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        expression: 'Expected a function expression.',
+        declaration: 'Expected a function declaration.'
+      }
     }
   },
   {
@@ -1088,7 +1269,13 @@ module.exports = [
             }
           ]
         }
-      ]
+      ],
+      messages: {
+        expectedBefore: "Expected newline before ')'.",
+        expectedAfter: "Expected newline after '('.",
+        unexpectedBefore: "Unexpected newline before '('.",
+        unexpectedAfter: "Unexpected newline after ')'."
+      }
     }
   },
   {
@@ -1198,7 +1385,13 @@ module.exports = [
             }
           ]
         }
-      ]
+      ],
+      messages: {
+        missingBefore: 'Missing space before *.',
+        missingAfter: 'Missing space after *.',
+        unexpectedBefore: 'Unexpected space before *.',
+        unexpectedAfter: 'Unexpected space after *.'
+      }
     }
   },
   {
@@ -1207,7 +1400,7 @@ module.exports = [
       docs: {
         description: 'enforce `return` statements in getters',
         category: 'Possible Errors',
-        recommended: false,
+        recommended: true,
         url: 'https://eslint.org/docs/rules/getter-return'
       },
       fixable: null,
@@ -1221,7 +1414,11 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        expected: 'Expected to return a value in {{name}}.',
+        expectedAlways: 'Expected {{name}} to always return a value.'
+      }
     }
   },
   {
@@ -3062,6 +3259,26 @@ module.exports = [
     }
   },
   {
+    id: 'max-classes-per-file',
+    meta: {
+      docs: {
+        description: 'enforce a maximum number of classes per file',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/max-classes-per-file'
+      },
+      schema: [
+        {
+          type: 'integer',
+          minimum: 1
+        }
+      ],
+      messages: {
+        maximumExceeded: 'Number of classes per file must not exceed {{ max }}'
+      }
+    }
+  },
+  {
     id: 'max-depth',
     meta: {
       docs: {
@@ -3238,6 +3455,46 @@ module.exports = [
             }
           },
           additionalProperties: false
+        }
+      ]
+    }
+  },
+  {
+    id: 'max-lines-per-function',
+    meta: {
+      docs: {
+        description: 'enforce a maximum number of line of code in a function',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/max-lines-per-function'
+      },
+      schema: [
+        {
+          oneOf: [
+            {
+              type: 'object',
+              properties: {
+                max: {
+                  type: 'integer',
+                  minimum: 0
+                },
+                skipComments: {
+                  type: 'boolean'
+                },
+                skipBlankLines: {
+                  type: 'boolean'
+                },
+                IIFEs: {
+                  type: 'boolean'
+                }
+              },
+              additionalProperties: false
+            },
+            {
+              type: 'integer',
+              minimum: 1
+            }
+          ]
         }
       ]
     }
@@ -3591,7 +3848,10 @@ module.exports = [
         recommended: false,
         url: 'https://eslint.org/docs/rules/no-alert'
       },
-      schema: []
+      schema: [],
+      messages: {
+        unexpected: 'Unexpected {{name}}.'
+      }
     }
   },
   {
@@ -3603,6 +3863,22 @@ module.exports = [
         recommended: false,
         url: 'https://eslint.org/docs/rules/no-array-constructor'
       },
+      schema: [],
+      messages: {
+        preferLiteral: 'The array literal notation [] is preferable.'
+      }
+    }
+  },
+  {
+    id: 'no-async-promise-executor',
+    meta: {
+      docs: {
+        description: 'disallow using an async function as a Promise executor',
+        category: 'Possible Errors',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-async-promise-executor'
+      },
+      fixable: null,
       schema: []
     }
   },
@@ -3615,7 +3891,10 @@ module.exports = [
         recommended: false,
         url: 'https://eslint.org/docs/rules/no-await-in-loop'
       },
-      schema: []
+      schema: [],
+      messages: {
+        unexpectedAwait: 'Unexpected `await` inside a loop.'
+      }
     }
   },
   {
@@ -3658,19 +3937,25 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        unexpected: "Unexpected use of '{{operator}}'."
+      }
     }
   },
   {
     id: 'no-buffer-constructor',
     meta: {
       docs: {
-        description: 'disallow use of the Buffer() constructor',
+        description: 'disallow use of the `Buffer()` constructor',
         category: 'Node.js and CommonJS',
         recommended: false,
         url: 'https://eslint.org/docs/rules/no-buffer-constructor'
       },
-      schema: []
+      schema: [],
+      messages: {
+        deprecated: '{{expr}} is deprecated. Use Buffer.from(), Buffer.alloc(), or Buffer.allocUnsafe() instead.'
+      }
     }
   },
   {
@@ -3682,7 +3967,10 @@ module.exports = [
         recommended: false,
         url: 'https://eslint.org/docs/rules/no-caller'
       },
-      schema: []
+      schema: [],
+      messages: {
+        unexpected: 'Avoid arguments.{{prop}}.'
+      }
     }
   },
   {
@@ -3694,7 +3982,10 @@ module.exports = [
         recommended: true,
         url: 'https://eslint.org/docs/rules/no-case-declarations'
       },
-      schema: []
+      schema: [],
+      messages: {
+        unexpected: 'Unexpected lexical declaration in case block.'
+      }
     }
   },
   {
@@ -3704,9 +3995,16 @@ module.exports = [
         description: 'disallow `catch` clause parameters from shadowing variables in the outer scope',
         category: 'Variables',
         recommended: false,
-        url: 'https://eslint.org/docs/rules/no-catch-shadow'
+        url: 'https://eslint.org/docs/rules/no-catch-shadow',
+        replacedBy: [
+          'no-shadow'
+        ]
       },
-      schema: []
+      deprecated: true,
+      schema: [],
+      messages: {
+        mutable: "Value of '{{name}}' may be overwritten in IE 8 and earlier."
+      }
     }
   },
   {
@@ -3718,7 +4016,10 @@ module.exports = [
         recommended: true,
         url: 'https://eslint.org/docs/rules/no-class-assign'
       },
-      schema: []
+      schema: [],
+      messages: {
+        'class': "'{{name}}' is a class."
+      }
     }
   },
   {
@@ -3731,7 +4032,10 @@ module.exports = [
         url: 'https://eslint.org/docs/rules/no-compare-neg-zero'
       },
       fixable: null,
-      schema: []
+      schema: [],
+      messages: {
+        unexpected: "Do not use the '{{operator}}' operator to compare against -0."
+      }
     }
   },
   {
@@ -3750,7 +4054,11 @@ module.exports = [
             'always'
           ]
         }
-      ]
+      ],
+      messages: {
+        unexpected: 'Unexpected assignment within {{type}}.',
+        missing: 'Expected a conditional expression and instead saw an assignment.'
+      }
     }
   },
   {
@@ -3773,7 +4081,10 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        confusing: 'Arrow function used ambiguously with a conditional expression.'
+      }
     }
   },
   {
@@ -3800,7 +4111,10 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        unexpected: 'Unexpected console statement.'
+      }
     }
   },
   {
@@ -3812,7 +4126,10 @@ module.exports = [
         recommended: true,
         url: 'https://eslint.org/docs/rules/no-const-assign'
       },
-      schema: []
+      schema: [],
+      messages: {
+        'const': "'{{name}}' is constant."
+      }
     }
   },
   {
@@ -3834,7 +4151,10 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        unexpected: 'Unexpected constant condition.'
+      }
     }
   },
   {
@@ -3846,7 +4166,10 @@ module.exports = [
         recommended: false,
         url: 'https://eslint.org/docs/rules/no-continue'
       },
-      schema: []
+      schema: [],
+      messages: {
+        unexpected: 'Unexpected use of continue statement.'
+      }
     }
   },
   {
@@ -3858,7 +4181,10 @@ module.exports = [
         recommended: true,
         url: 'https://eslint.org/docs/rules/no-control-regex'
       },
-      schema: []
+      schema: [],
+      messages: {
+        unexpected: 'Unexpected control character(s) in regular expression: {{controlChars}}.'
+      }
     }
   },
   {
@@ -3870,8 +4196,11 @@ module.exports = [
         recommended: true,
         url: 'https://eslint.org/docs/rules/no-debugger'
       },
-      fixable: 'code',
-      schema: []
+      fixable: null,
+      schema: [],
+      messages: {
+        unexpected: "Unexpected 'debugger' statement."
+      }
     }
   },
   {
@@ -3883,7 +4212,10 @@ module.exports = [
         recommended: true,
         url: 'https://eslint.org/docs/rules/no-delete-var'
       },
-      schema: []
+      schema: [],
+      messages: {
+        unexpected: 'Variables should not be deleted.'
+      }
     }
   },
   {
@@ -3895,7 +4227,10 @@ module.exports = [
         recommended: false,
         url: 'https://eslint.org/docs/rules/no-div-regex'
       },
-      schema: []
+      schema: [],
+      messages: {
+        unexpected: "A regular expression literal can be confused with '/='."
+      }
     }
   },
   {
@@ -3907,7 +4242,10 @@ module.exports = [
         recommended: true,
         url: 'https://eslint.org/docs/rules/no-dupe-args'
       },
-      schema: []
+      schema: [],
+      messages: {
+        unexpected: "Duplicate param '{{name}}'."
+      }
     }
   },
   {
@@ -3919,7 +4257,10 @@ module.exports = [
         recommended: true,
         url: 'https://eslint.org/docs/rules/no-dupe-class-members'
       },
-      schema: []
+      schema: [],
+      messages: {
+        unexpected: "Duplicate name '{{name}}'."
+      }
     }
   },
   {
@@ -3931,7 +4272,10 @@ module.exports = [
         recommended: true,
         url: 'https://eslint.org/docs/rules/no-dupe-keys'
       },
-      schema: []
+      schema: [],
+      messages: {
+        unexpected: "Duplicate key '{{name}}'."
+      }
     }
   },
   {
@@ -3943,7 +4287,10 @@ module.exports = [
         recommended: true,
         url: 'https://eslint.org/docs/rules/no-duplicate-case'
       },
-      schema: []
+      schema: [],
+      messages: {
+        unexpected: 'Duplicate case label.'
+      }
     }
   },
   {
@@ -3988,7 +4335,10 @@ module.exports = [
           additionalProperties: false
         }
       ],
-      fixable: 'code'
+      fixable: 'code',
+      messages: {
+        unexpected: "Unnecessary 'else' after 'return'."
+      }
     }
   },
   {
@@ -4000,7 +4350,10 @@ module.exports = [
         recommended: true,
         url: 'https://eslint.org/docs/rules/no-empty-character-class'
       },
-      schema: []
+      schema: [],
+      messages: {
+        unexpected: 'Empty class.'
+      }
     }
   },
   {
@@ -4035,7 +4388,10 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        unexpected: 'Unexpected empty {{name}}.'
+      }
     }
   },
   {
@@ -4047,7 +4403,10 @@ module.exports = [
         recommended: true,
         url: 'https://eslint.org/docs/rules/no-empty-pattern'
       },
-      schema: []
+      schema: [],
+      messages: {
+        unexpected: 'Unexpected empty {{type}} pattern.'
+      }
     }
   },
   {
@@ -4069,7 +4428,10 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        unexpected: 'Empty {{type}} statement.'
+      }
     }
   },
   {
@@ -4081,7 +4443,10 @@ module.exports = [
         recommended: false,
         url: 'https://eslint.org/docs/rules/no-eq-null'
       },
-      schema: []
+      schema: [],
+      messages: {
+        unexpected: "Use '===' to compare with null."
+      }
     }
   },
   {
@@ -4103,7 +4468,10 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        unexpected: 'eval can be harmful.'
+      }
     }
   },
   {
@@ -4115,7 +4483,10 @@ module.exports = [
         recommended: true,
         url: 'https://eslint.org/docs/rules/no-ex-assign'
       },
-      schema: []
+      schema: [],
+      messages: {
+        unexpected: 'Do not assign to the exception parameter.'
+      }
     }
   },
   {
@@ -4141,7 +4512,10 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        unexpected: '{{builtin}} prototype is read only, properties should not be added.'
+      }
     }
   },
   {
@@ -4154,7 +4528,10 @@ module.exports = [
         url: 'https://eslint.org/docs/rules/no-extra-bind'
       },
       schema: [],
-      fixable: 'code'
+      fixable: 'code',
+      messages: {
+        unexpected: 'The function binding is unnecessary.'
+      }
     }
   },
   {
@@ -4167,7 +4544,11 @@ module.exports = [
         url: 'https://eslint.org/docs/rules/no-extra-boolean-cast'
       },
       schema: [],
-      fixable: 'code'
+      fixable: 'code',
+      messages: {
+        unexpectedCall: 'Redundant Boolean call.',
+        unexpectedNegation: 'Redundant double negation.'
+      }
     }
   },
   {
@@ -4180,7 +4561,10 @@ module.exports = [
         url: 'https://eslint.org/docs/rules/no-extra-label'
       },
       schema: [],
-      fixable: 'code'
+      fixable: 'code',
+      messages: {
+        unexpected: "This label '{{name}}' is unnecessary."
+      }
     }
   },
   {
@@ -4246,6 +4630,9 @@ module.exports = [
             maxItems: 2
           }
         ]
+      },
+      messages: {
+        unexpected: 'Unnecessary parentheses around expression.'
       }
     }
   },
@@ -4259,7 +4646,10 @@ module.exports = [
         url: 'https://eslint.org/docs/rules/no-extra-semi'
       },
       fixable: 'code',
-      schema: []
+      schema: [],
+      messages: {
+        unexpected: 'Unnecessary semicolon.'
+      }
     }
   },
   {
@@ -4617,7 +5007,30 @@ module.exports = [
           },
           additionalProperties: false
         }
-      ]
+      ],
+      messages: {
+        useConst: "Number constants declarations must use 'const'.",
+        noMagic: 'No magic number: {{raw}}.'
+      }
+    }
+  },
+  {
+    id: 'no-misleading-character-class',
+    meta: {
+      docs: {
+        description: 'disallow characters which are made with multiple code points in character class syntax',
+        category: 'Possible Errors',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/no-misleading-character-class'
+      },
+      schema: [],
+      messages: {
+        surrogatePairWithoutUFlag: "Unexpected surrogate pair in character class. Use 'u' flag.",
+        combiningClass: 'Unexpected combined character in character class.',
+        emojiModifier: 'Unexpected modified Emoji in character class.',
+        regionalIndicatorSymbol: 'Unexpected national flag in character class.',
+        zwj: 'Unexpected joined character sequence in character class.'
+      }
     }
   },
   {
@@ -6403,6 +6816,60 @@ module.exports = [
                       minProperties: 1
                     }
                   ]
+                },
+                ImportDeclaration: {
+                  oneOf: [
+                    {
+                      'enum': [
+                        'always',
+                        'never'
+                      ]
+                    },
+                    {
+                      type: 'object',
+                      properties: {
+                        multiline: {
+                          type: 'boolean'
+                        },
+                        minProperties: {
+                          type: 'integer',
+                          minimum: 0
+                        },
+                        consistent: {
+                          type: 'boolean'
+                        }
+                      },
+                      additionalProperties: false,
+                      minProperties: 1
+                    }
+                  ]
+                },
+                ExportDeclaration: {
+                  oneOf: [
+                    {
+                      'enum': [
+                        'always',
+                        'never'
+                      ]
+                    },
+                    {
+                      type: 'object',
+                      properties: {
+                        multiline: {
+                          type: 'boolean'
+                        },
+                        minProperties: {
+                          type: 'integer',
+                          minimum: 0
+                        },
+                        consistent: {
+                          type: 'boolean'
+                        }
+                      },
+                      additionalProperties: false,
+                      minProperties: 1
+                    }
+                  ]
                 }
               },
               additionalProperties: false,
@@ -6584,13 +7051,15 @@ module.exports = [
         recommended: false,
         url: 'https://eslint.org/docs/rules/one-var'
       },
+      fixable: 'code',
       schema: [
         {
           oneOf: [
             {
               'enum': [
                 'always',
-                'never'
+                'never',
+                'consecutive'
               ]
             },
             {
@@ -6602,19 +7071,22 @@ module.exports = [
                 'var': {
                   'enum': [
                     'always',
-                    'never'
+                    'never',
+                    'consecutive'
                   ]
                 },
                 let: {
                   'enum': [
                     'always',
-                    'never'
+                    'never',
+                    'consecutive'
                   ]
                 },
                 'const': {
                   'enum': [
                     'always',
-                    'never'
+                    'never',
+                    'consecutive'
                   ]
                 }
               },
@@ -6626,13 +7098,15 @@ module.exports = [
                 initialized: {
                   'enum': [
                     'always',
-                    'never'
+                    'never',
+                    'consecutive'
                   ]
                 },
                 uninitialized: {
                   'enum': [
                     'always',
-                    'never'
+                    'never',
+                    'consecutive'
                   ]
                 }
               },
@@ -6784,8 +7258,10 @@ module.exports = [
                   'directive',
                   'expression',
                   'multiline-block-like',
+                  'multiline-expression',
                   'block',
                   'empty',
+                  'function',
                   'break',
                   'case',
                   'class',
@@ -6796,7 +7272,6 @@ module.exports = [
                   'do',
                   'export',
                   'for',
-                  'function',
                   'if',
                   'import',
                   'let',
@@ -6820,8 +7295,10 @@ module.exports = [
                     'directive',
                     'expression',
                     'multiline-block-like',
+                    'multiline-expression',
                     'block',
                     'empty',
+                    'function',
                     'break',
                     'case',
                     'class',
@@ -6832,7 +7309,6 @@ module.exports = [
                     'do',
                     'export',
                     'for',
-                    'function',
                     'if',
                     'import',
                     'let',
@@ -7011,6 +7487,23 @@ module.exports = [
       },
       schema: [],
       fixable: 'code'
+    }
+  },
+  {
+    id: 'prefer-object-spread',
+    meta: {
+      docs: {
+        description: 'disallow using Object.assign with an object literal as the first argument and prefer the use of object spread instead.',
+        category: 'Stylistic Issues',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/prefer-object-spread'
+      },
+      schema: [],
+      fixable: 'code',
+      messages: {
+        useSpreadMessage: 'Use an object spread instead of `Object.assign` eg: `{ ...foo }`',
+        useLiteralMessage: 'Use an object literal instead of `Object.assign`. eg: `{ foo: bar }`'
+      }
     }
   },
   {
@@ -7236,6 +7729,22 @@ module.exports = [
     }
   },
   {
+    id: 'require-atomic-updates',
+    meta: {
+      docs: {
+        description: 'disallow assignments that can lead to race conditions due to usage of `await` or `yield`',
+        category: 'Possible Errors',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/require-atomic-updates'
+      },
+      fixable: null,
+      schema: [],
+      messages: {
+        nonAtomicUpdate: 'Possible race condition: `{{value}}` might be reassigned based on an outdated value of `{{value}}`.'
+      }
+    }
+  },
+  {
     id: 'require-await',
     meta: {
       docs: {
@@ -7285,6 +7794,21 @@ module.exports = [
           additionalProperties: false
         }
       ]
+    }
+  },
+  {
+    id: 'require-unicode-regexp',
+    meta: {
+      docs: {
+        description: 'enforce the use of `u` flag on RegExp',
+        category: 'Best Practices',
+        recommended: false,
+        url: 'https://eslint.org/docs/rules/require-unicode-regexp'
+      },
+      messages: {
+        requireUFlag: "Use the 'u' flag."
+      },
+      schema: []
     }
   },
   {
@@ -7961,6 +8485,9 @@ module.exports = [
             },
             requireReturnType: {
               type: 'boolean'
+            },
+            requireParamType: {
+              type: 'boolean'
             }
           },
           additionalProperties: false
@@ -8043,7 +8570,10 @@ module.exports = [
         url: 'https://eslint.org/docs/rules/wrap-regex'
       },
       schema: [],
-      fixable: 'code'
+      fixable: 'code',
+      messages: {
+        requireParens: 'Wrap the regexp literal in parens to disambiguate the slash.'
+      }
     }
   },
   {

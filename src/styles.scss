@@ -1,9 +1,18 @@
 html {
   font-family: Verdana;
+  height: 100%;
 }
 
 
 body {
-  width: calc(100% - 2em);
-  margin: 0 1em;
+  height: 100%;
+}
+
+:focus {
+  outline: none;
+}
+
+.app-container,
+.macros__list {
+  height: 100%;
 }

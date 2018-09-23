@@ -3,10 +3,8 @@
   width: 100%;
   padding: .25em 0;
 
-  &:nth-child(2n+1) {
-    background: #f5f5f5;
-  }
 
+  border-bottom: solid 1px #aaa;
 
   .ant-radio-group {
     display: flex;
@@ -15,6 +13,21 @@
   .ant-radio-wrapper {
     font-size: .9em;
     margin-bottom: .25em;
+  }
+}
+
+.rule__enabled {
+
+  .ant-radio-group {
+    background: #f0f8ff;
+    display: flex;
+    flex-direction: row;
+    padding: .25em;
+    margin-right: .5em;
+
+    > label {
+      margin: 0;
+    }
   }
 }
 
