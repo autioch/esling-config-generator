@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Icon, Radio } from 'antd';
 import Schema from './schema';
 import './styles';
-import { DISABLED_RULES, CHECKED_RULES } from './whitelists';
 const RadioGroup = Radio.Group;
 
 export default class Rule extends Component {
@@ -12,22 +11,16 @@ export default class Rule extends Component {
     console.error(info);
   }
   render() {
-    const {
-      id,
-      meta: {
-        docs: { recommended, category, description, url },
-        fixable,
-        schema
-      }
-    } = this.props.rule;
+    const { rule, index, style } = this.props;
+    const { id, description, category, url, recommended, fixable, schemas, isDisabled, isChecked } = rule;
 
     return (
-      <div className="rule" style={this.props.style}>
+      <div className="rule" style={style}>
         <div className="rule__recommended">{recommended ? <Icon type="check" title="recommended"/> : ''}</div>
         <div className="rule__fixable">{fixable ? <Icon type="tool" title="fixable"/> : ''}</div>
         <div className="rule__info">
           <div className="rule__id">
-            <span> {this.props.index} </span>
+            <span> {index} </span>
             <a href={url} target="_blank">{id}</a>
             <span className="rule__category">{category}</span>
           </div>
@@ -36,10 +29,10 @@ export default class Rule extends Component {
         <div className="rule__enabled">
           <RadioGroup options={['Error', 'Warn', 'Off']} value="Error" />
         </div>
-        { DISABLED_RULES[id] ? <div>DISABLED</div> : <Schema schema={schema} input=""/> }
-        {CHECKED_RULES[id] || schema.length === 0 ? '' : <pre style={{
+        {isDisabled ? <div>DISABLED</div> : <Schema schemas={schemas} input=""/> }
+        {isChecked || schemas.length === 0 ? '' : <pre style={{
           fontSize: '10px'
-        }}>{JSON.stringify(schema, null, '  ')}</pre>}
+        }}>{JSON.stringify(schemas, null, '  ')}</pre>}
       </div>
     );
   }

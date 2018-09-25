@@ -35,13 +35,7 @@ export default class MacroList extends PureComponent {
     const rule = this.props.rules[index];
 
     return (
-      <CellMeasurer
-        cache={this.cache}
-        columnIndex={0}
-        key={key}
-        rowIndex={index}
-        parent={parent}
-      >
+      <CellMeasurer cache={this.cache} columnIndex={0} key={key} rowIndex={index} parent={parent} >
         <Rule style={style} rule={rule} index={index} />
       </CellMeasurer>
     );

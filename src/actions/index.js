@@ -1,5 +1,5 @@
-import _ from 'lodash';
-import rulesURL from '../rules.json';
+import rulesURL from './rules.json';
+import parseRules from './parseRules';
 
 export default {
   fetchRules({ store }) {
@@ -10,17 +10,10 @@ export default {
   },
 
   setRules({ data: rules }) {
-    const groups = _.groupBy(rules, (rule) => rule.meta.docs.category);
-
-    const preparedRules = Object.entries(groups)
-      .sort((a, b) => a[0].localeCompare(b[0]))
-
-      // .filter(([groupKey]) => groupKey === 'Stylistic Issues')
-      .map(([, groupRules]) => groupRules)
-      .reduce((arr, groupRules) => arr.concat(groupRules.sort((a, b) => a.id.localeCompare(b.id))), []);
+    const parsedRules = parseRules(rules);
 
     return {
-      rules: preparedRules
+      rules: parsedRules
     };
   }
 
