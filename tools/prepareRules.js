@@ -2,12 +2,6 @@ const { join } = require('path');
 const { writeFile } = require('fs');
 const eslintLoadRules = require('eslint/lib/load-rules');
 
-const headerLines = [
-  '/* eslint max-lines: 0 */',
-  '/* eslint max-len: 0 */',
-  'module.exports = '
-].join('\r\n');
-
 const rulePathsDict = eslintLoadRules();
 const rules = Object.entries(rulePathsDict)
   .map(([id, absolutePath]) => ({
@@ -15,8 +9,8 @@ const rules = Object.entries(rulePathsDict)
     meta: require(absolutePath).meta
   }));
 
-const fileName = join(__dirname, '..', 'src', 'rules.js');
-const contents = `${headerLines}${JSON.stringify(rules, null, '  ')};`;
+const fileName = join(__dirname, '..', 'src', 'rules.json');
+const contents = JSON.stringify(rules, null, '  ');
 
 writeFile(fileName, contents, 'utf8', (err) => {
   if (err) {

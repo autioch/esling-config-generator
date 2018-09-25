@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import List from './list';
 
-export default class App extends Component {
-  render() {
-    return (<List rules={this.props.rules}/>);
-  }
+export default function App({ state }) {
+  return (<List rules={state.rules}/>);
 }

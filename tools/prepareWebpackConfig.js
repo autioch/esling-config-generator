@@ -69,7 +69,7 @@ module.exports = function prepareWebpackConfig({ sourceRoot, buildRoot, projectR
           }]
         })
       }, {
-        test: /\.(woff2|ttf|eot|woff|png|jpg)$/i,
+        test: /\.(woff2|ttf|eot|woff|png|jpg|json)$/i,
         loader: 'file-loader',
         options: {
           name: '[path][name].[ext]'
