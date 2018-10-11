@@ -1,64 +1,37 @@
 .rule {
   display: flex;
   width: 100%;
-  padding: .25em 0;
+  border-bottom: solid 1px #ddd;
+  padding: .25em .5em;
 
-
-  border-bottom: solid 1px #aaa;
-
-  .ant-radio-group {
+  > .ant-radio-group {
     display: flex;
     flex-direction: column;
-  }
-  .ant-radio-wrapper {
-    font-size: .9em;
-    margin-bottom: .25em;
-  }
-}
-
-.rule__enabled {
-
-  .ant-radio-group {
-    background: #f0f8ff;
-    display: flex;
-    flex-direction: row;
-    padding: .25em;
+    border-right: solid 1px #f4f4f4;
     margin-right: .5em;
-
-    > label {
-      margin: 0;
-    }
   }
 }
 
-.rule__schema {
-  font-family: Consolas;
-  margin-left: auto;
-  flex-grow: 1;
-  margin-right: .5em;
+.rule__icon {
+  flex: none;
+  text-align: center;
+  width: 1.2em;
+  font-size: 1.2em;
+}
 
-  > div {
-    background: #aaa;
-    margin-bottom: .25em;
-  }
+.rule__info {
+  border-left: solid 1px #f4f4f4;
+  border-right: solid 1px #f4f4f4;
+  padding: 0 .5em;
+  margin: 0 .5em;
+  width: 40em;
+}
+
+.rule__url {
+  margin: 0 .5em;
 }
 
 .rule__category {
   color: #bbb;
-  margin-left: 1em;
-}
-
-.rule__info {
-  display: flex;
-  flex-direction: column;
-  flex: none;
-  width: 40em;
-}
-
-.rule__recommended,
-.rule__fixable {
-  flex: none;
-  text-align: center;
-  width: 1.5em;
-  font-size: 1.5em;
+  font-size: .9em;
 }

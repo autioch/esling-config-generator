@@ -46,10 +46,6 @@
   margin-right: .5em;
 }
 
-.rule__schema-list {
-  flex-grow: 1;
-}
-
 .c-radio-option {
   padding: .5em;
 
@@ -60,4 +56,9 @@
 
 .c-radio-group {
   padding-left: 2em;
+}
+
+
+.rule__schema-list {
+  flex-grow: 1;
 }

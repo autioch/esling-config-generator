@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Icon, Radio } from 'antd';
+import { Icon } from 'antd';
 import Schema from './schema';
+import ErrorLevel from './errorLevel';
+
 import './styles';
-const RadioGroup = Radio.Group;
 
 export default class Rule extends Component {
   componentDidCatch(error, info) {
@@ -11,28 +12,24 @@ export default class Rule extends Component {
     console.error(info);
   }
   render() {
-    const { rule, index, style } = this.props;
-    const { id, description, category, url, recommended, fixable, schemas, isDisabled, isChecked } = rule;
+    const { rule, style, store, state } = this.props;
+    const { id, index, description, category, url, recommended, fixable, schemas, isDisabled, showDebug } = rule;
 
     return (
       <div className="rule" style={style}>
-        <div className="rule__recommended">{recommended ? <Icon type="check" title="recommended"/> : ''}</div>
-        <div className="rule__fixable">{fixable ? <Icon type="tool" title="fixable"/> : ''}</div>
+        <div className="rule__icon">{recommended ? <Icon type="check" title="recommended"/> : ''}</div>
+        <div className="rule__icon">{fixable ? <Icon type="tool" title="fixable"/> : ''}</div>
         <div className="rule__info">
-          <div className="rule__id">
-            <span> {index} </span>
-            <a href={url} target="_blank">{id}</a>
+          <div className="rule__header">
+            <span className="rule__index">{index}.</span>
+            <a className="rule__url" href={url} target="_blank">{id}</a>
             <span className="rule__category">{category}</span>
           </div>
           <div className="rule__description">{description}</div>
         </div>
-        <div className="rule__enabled">
-          <RadioGroup options={['Error', 'Warn', 'Off']} value="Error" />
-        </div>
+        <ErrorLevel className="rule__enabled" rule={rule} store={store} state={state} />
         {isDisabled ? <div>DISABLED</div> : <Schema schemas={schemas} input=""/> }
-        {isChecked || schemas.length === 0 ? '' : <pre style={{
-          fontSize: '10px'
-        }}>{JSON.stringify(schemas, null, '  ')}</pre>}
+        {showDebug ? <pre className="rule__debug">{JSON.stringify(schemas, null, '  ')}</pre> : '' }
       </div>
     );
   }

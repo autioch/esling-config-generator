@@ -21,7 +21,7 @@ function prepareSchemas(schemas) {
   return prepareSchema(schemas);
 }
 
-export default function parseRules(rawRules) {
+export default function parseRules(rawRules, errorLevels) {
   const parsedRules = rawRules.map((rule) => {
     const { id, meta: { docs: { description, category, recommended, url }, fixable, schema } } = rule;
     const schemas = prepareSchemas(schema);
@@ -31,11 +31,12 @@ export default function parseRules(rawRules) {
       description,
       category,
       recommended,
+      errorLevel: errorLevels[0].value,
       fixable,
       url,
       schemas,
       isDisabled: DISABLED_RULES[id],
-      isChecked: CHECKED_RULES[id]
+      showDebug: schemas.length > 0 && !CHECKED_RULES[id]
     };
   });
 
@@ -44,7 +45,10 @@ export default function parseRules(rawRules) {
   const sortedRules = Object.entries(groups)
     .sort((a, b) => a[0].localeCompare(b[0]))
     .map(([, groupRules]) => groupRules)
-    .reduce((arr, groupRules) => arr.concat(groupRules.sort((a, b) => a.id.localeCompare(b.id))), []);
+    .reduce((arr, groupRules) => arr.concat(groupRules.sort((a, b) => a.id.localeCompare(b.id))), [])
+    .map((rule, index) => Object.assign({}, rule, {
+      index: index + 1
+    }));
 
   return sortedRules;
 }

@@ -2,8 +2,6 @@ import React, { PureComponent } from 'react';
 import { CellMeasurer, CellMeasurerCache, AutoSizer, List } from 'react-virtualized';
 import Rule from './rule';
 
-// import './index.css';
-
 export default class MacroList extends PureComponent {
   constructor(props) {
     super(props);
@@ -32,11 +30,12 @@ export default class MacroList extends PureComponent {
     document.removeEventListener('resize', this.resetCache);
   }
   rowRenderer({ index, key, parent, style }) { // eslint-disable-line no-shadow
-    const rule = this.props.rules[index];
+    const { rules, state, store } = this.props;
+    const rule = rules[index];
 
     return (
       <CellMeasurer cache={this.cache} columnIndex={0} key={key} rowIndex={index} parent={parent} >
-        <Rule style={style} rule={rule} index={index} />
+        <Rule style={style} rule={rule} state={state} store={store}/>
       </CellMeasurer>
     );
   }

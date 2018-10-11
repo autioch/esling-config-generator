@@ -1,6 +1,7 @@
 import React from 'react';
 import Field from './component/field';
-import './styles';
+
+// import './styles';
 
 export default function Schema({ schemas }) {
   return (
