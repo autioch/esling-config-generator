@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { Icon } from 'antd';
-import Schema from './schema';
-import ErrorLevel from './errorLevel';
+import { Icon, Radio } from 'antd';
+import Field from './component/field';
 
+import './component';
 import './styles';
+
+const RadioGroup = Radio.Group;
 
 export default class Rule extends Component {
   componentDidCatch(error, info) {
@@ -27,8 +29,21 @@ export default class Rule extends Component {
           </div>
           <div className="rule__description">{description}</div>
         </div>
-        <ErrorLevel className="rule__enabled" rule={rule} store={store} state={state} />
-        {isDisabled ? <div>DISABLED</div> : <Schema schemas={schemas} input=""/> }
+        <RadioGroup
+          onChange={(ev) => store.setErrorLevel({
+            ruleId: rule.id,
+            errorLevel: ev.target.value
+          })}
+          value={rule.errorLevel}>
+          {state.errorLevels.map(({ value, label }) => <Radio key={value} value={value}>{label}</Radio>) }
+        </RadioGroup>
+        {isDisabled ? <div>DISABLED</div> : <div className="rule__schema-list">
+          {schemas.map((schema, schemaIndex) =>
+            <div className="schema__option" key={schemaIndex}>
+              <Field propertyName="" obj={schema}/>
+            </div>
+          )}
+        </div> }
         {showDebug ? <pre className="rule__debug">{JSON.stringify(schemas, null, '  ')}</pre> : '' }
       </div>
     );
