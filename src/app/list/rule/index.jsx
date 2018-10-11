@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Icon, Radio } from 'antd';
-import Field from './component/field';
+import Field from './field';
 
 import './component';
 import './styles';
@@ -15,7 +15,7 @@ export default class Rule extends Component {
   }
   render() {
     const { rule, style, store, state } = this.props;
-    const { id, index, description, category, url, recommended, fixable, schemas, isDisabled, showDebug } = rule;
+    const { id, index, description, category, url, recommended, fixable, schemas, isDisabled, debugInfo } = rule;
 
     return (
       <div className="rule" style={style}>
@@ -40,11 +40,11 @@ export default class Rule extends Component {
         {isDisabled ? <div>DISABLED</div> : <div className="rule__schema-list">
           {schemas.map((schema, schemaIndex) =>
             <div className="schema__option" key={schemaIndex}>
-              <Field propertyName="" obj={schema}/>
+              <Field pathKey="" obj={schema}/>
             </div>
           )}
         </div> }
-        {showDebug ? <pre className="rule__debug">{JSON.stringify(schemas, null, '  ')}</pre> : '' }
+        {debugInfo ? <pre className="rule__debug">{debugInfo}</pre> : '' }
       </div>
     );
   }

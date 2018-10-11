@@ -5,8 +5,8 @@ import { Switch } from 'antd';
 
 const noop = () => {}; // eslint-disable-line no-empty-function
 
-export default ({ propertyName }) => (
+export default ({ label, value }) => (
   <div className="field__obj">
-    <Switch size="small" defaultChecked onChange={noop} /> {propertyName}
+    <Switch size="small" defaultChecked value={value} onChange={noop} /> {label}
   </div>
 );

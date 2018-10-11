@@ -17,6 +17,7 @@ module.exports = {
     'no-plusplus': ['off'],
     'camelcase': ['off'],
     'id-length': ['off'],
+    'max-len': [0],
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
   }

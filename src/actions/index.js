@@ -1,5 +1,5 @@
 import rulesURL from './rules.json';
-import parseRules from './parseRules';
+import parseRules from '../parseRules';
 
 export default {
   fetchRules({ store }) {
