@@ -1,26 +1,9 @@
 const DISABLED_IDS = [
   'comma-dangle',
   'valid-jsdoc',
-  'indent',
-  'indent-legacy',
-  'key-spacing',
-  'keyword-spacing',
-  'max-len',
-  'nonblock-statement-body-position',
-  'padding-line-between-statements',
   'comma-style',
   'func-names',
-  'space-unary-ops',
-  'no-multi-spaces',
-  'no-restricted-properties',
-  'no-restricted-imports',
-  'no-restricted-modules',
-  'array-bracket-newline',
-  'array-element-newline',
-  'no-mixed-operators',
-  'no-restricted-syntax',
-  'operator-linebreak',
-  'no-restricted-globals'
+  'no-mixed-operators'
 ];
 
 const CHECKED_IDS = [

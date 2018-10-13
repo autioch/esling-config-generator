@@ -1,5 +1,4 @@
 /* eslint no-use-before-define: 0 */
-import field from './field';
 
 function parseSchema(schema) {
   if (schema.oneOf) {
@@ -9,12 +8,7 @@ function parseSchema(schema) {
     return parseSchemas(schema.anyOf);
   }
 
-  const fieldInfo = field({
-    pathKey: '',
-    obj: schema
-  });
-
-  return [fieldInfo];
+  return [schema];
 }
 
 function parseSchemas(schemas) {

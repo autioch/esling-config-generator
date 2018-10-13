@@ -1,12 +1,14 @@
 import Field from './index';
 
-export default ({ label, options }) => (
-  <div>
-    <div>{label}</div>
-    {options.map(({ pathKey, obj }, index) =>
-      <div className="field-array__option" key={index}>
-        <Field pathKey={pathKey} obj={obj} />
-      </div>
-    )}
-  </div>
-);
+export default function ArrayField({ obj: { label, options } }) {
+  return (
+    <div>
+      <div>{label}</div>
+      {options.map((obj, index) =>
+        <div className="field-array__option" key={index}>
+          <Field pathKey={obj.pathKey} obj={obj} />
+        </div>
+      )}
+    </div>
+  );
+}

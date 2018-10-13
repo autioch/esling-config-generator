@@ -1,7 +1,9 @@
 import { InputNumber } from 'antd';
 
-export default ({ min, max, label }) => (
-  <div>
-    <InputNumber size="small" min={min} min={max} defaultValue={min}/> {label}
-  </div>
-);
+export default function({ obj: { min, max, label } }) {
+  return (
+    <div>
+      <InputNumber size="small" min={min} min={max} defaultValue={min}/> {label}
+    </div>
+  );
+}

@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 import anyOfField from './anyOf';
 import arrayField from './array';
 import arrayTypeField from './arrayType';
@@ -30,8 +31,16 @@ const Views = {
   unknown: unknownField
 };
 
-export default ({ pathKey, obj }) => {
-  const Field = Views[obj.type];
+export default class Field extends Component {
+  // componentDidCatch(error, info) {
+  //   console.log('FIELD', this.props);
+  //   console.error(error);
+  //   console.error(info);
+  // }
+  render() {
+    const { pathKey, obj } = this.props;
+    const View = Views[obj.type];
 
-  return (<Field pathKey={pathKey} obj={obj} />);
-};
+    return (<View pathKey={pathKey} obj={obj} />);
+  }
+}

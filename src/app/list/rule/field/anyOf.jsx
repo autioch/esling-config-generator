@@ -1,12 +1,14 @@
 import Field from './index';
 
-export default ({ label, options }) => (
-  <div>
-    <div>{label}</div>
-    {options.map(({ pathKey, obj }, index) =>
-      <div>
-        <Field pathKey={pathKey} obj={obj} key={index}/>
-      </div>
-    )}
-  </div>
-);
+export default function AnyOfField({ obj: { label, options } }) {
+  return (
+    <div>
+      <div>{label}</div>
+      {options.map((obj, index) =>
+        <div>
+          <Field pathKey={obj.pathKey} obj={obj} key={index}/>
+        </div>
+      )}
+    </div>
+  );
+}

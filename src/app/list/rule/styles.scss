@@ -5,8 +5,8 @@
   padding: .25em .5em;
 
   > .ant-radio-group {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     border-right: solid 1px #f4f4f4;
     margin-right: .5em;
   }
@@ -34,4 +34,10 @@
 .rule__category {
   color: #bbb;
   font-size: .9em;
+}
+
+.rule__debug {
+  width: 30em;
+  font-size: .9em;
+  font-family: monospace;
 }

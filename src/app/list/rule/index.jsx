@@ -15,7 +15,7 @@ export default class Rule extends Component {
   }
   render() {
     const { rule, style, store, state } = this.props;
-    const { id, index, description, category, url, recommended, fixable, schemas, isDisabled, debugInfo } = rule;
+    const { id, index, description, category, url, recommended, fixable, schemas, isDisabled, debugInfo, debugInfo2 } = rule;
 
     return (
       <div className="rule" style={style}>
@@ -44,6 +44,7 @@ export default class Rule extends Component {
             </div>
           )}
         </div> }
+        {debugInfo2 ? <pre className="rule__debug">{debugInfo2}</pre> : '' }
         {debugInfo ? <pre className="rule__debug">{debugInfo}</pre> : '' }
       </div>
     );

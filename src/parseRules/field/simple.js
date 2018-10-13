@@ -28,12 +28,6 @@ const booleanField = ({ pathKey }) => ({
   value: false
 });
 
-const stringArrayField = ({ pathKey }) => ({
-  pathKey,
-  type: 'stringArray',
-  options: []
-});
-
 const stringField = ({ pathKey }) => ({
   pathKey,
   placeholder: pathKey || '',
@@ -41,15 +35,24 @@ const stringField = ({ pathKey }) => ({
   value: ''
 });
 
+const stringArrayField = ({ pathKey }) => ({
+  pathKey,
+  label: pathKey ? `${pathKey}:` : '',
+  type: 'stringArray',
+  options: []
+});
+
 const numberArrayField = ({ pathKey }) => ({
   pathKey,
   type: 'numberArray',
+  label: pathKey ? `${pathKey}:` : '',
   options: []
 });
 
 const enumArrayField = ({ obj, pathKey }) => ({
   pathKey,
   type: 'enumArray',
+  label: pathKey ? `${pathKey}:` : '',
   maxItems: obj.maxItems || Infinity,
   value: [],
   options: obj.enum.map((option) => ({

@@ -58,10 +58,12 @@ export default class EditableTagGroup extends React.Component {
   }
 
   render() {
+    const { label } = this.props.obj;
     const { tags, inputVisible, inputValue } = this.state;
 
     return (
       <div>
+        {label}
         {tags.map((tag, index) => {
           const isLongTag = tag.length > 20;
           const tagElem = (
